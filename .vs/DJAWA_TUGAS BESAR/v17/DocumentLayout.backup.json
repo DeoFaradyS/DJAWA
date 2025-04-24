@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA1F80F4-8E5E-4DEF-9213-BAD81C9C054B}|DJAWA_TUGAS BESAR\\DJAWA_TUGAS BESAR.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\djawa_tugas besar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA1F80F4-8E5E-4DEF-9213-BAD81C9C054B}|DJAWA_TUGAS BESAR\\DJAWA_TUGAS BESAR.csproj|solutionrelative:djawa_tugas besar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\DJAWA_TUGAS BESAR\\Program.cs",
+              "RelativeDocumentMoniker": "DJAWA_TUGAS BESAR\\Program.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\DJAWA_TUGAS BESAR\\Program.cs",
+              "RelativeToolTip": "DJAWA_TUGAS BESAR\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T09:13:17.512Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
