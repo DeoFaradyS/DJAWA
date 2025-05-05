@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\views\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\views\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\views\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\djawa_tugas besar\\manajemenuser_deo\\manajemenuser_deo\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162BD23-1A99-4B8A-A36A-71D53D4FEF59}|ManajemenUser_Deo\\ManajemenUser_Deo.csproj|solutionrelative:manajemenuser_deo\\views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Models\\User.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Models\\User.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAkwAoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T09:07:05.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Login.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Views\\Login.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Login.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Views\\Login.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:51:03.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Profile.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Views\\Profile.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Profile.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Views\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:40:08.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Register.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Views\\Register.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Views\\Register.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Views\\Register.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:01:23.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T07:59:11.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Program.cs",
+              "RelativeDocumentMoniker": "ManajemenUser_Deo\\Program.cs",
+              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\Program.cs",
+              "RelativeToolTip": "ManajemenUser_Deo\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIA5wBoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T05:05:53.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
