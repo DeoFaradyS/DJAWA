@@ -18,6 +18,7 @@ namespace ManajemenUser_Deo.Views
             Console.WriteLine($"Name        : {user.Name}");
             Console.WriteLine($"Email       : {user.Email}");
             Console.WriteLine($"Password    : {user.Password}");
+            Console.WriteLine($"Role        : {user.Role}");
             Console.WriteLine($"Created At  : {user.CreatedAt}");
 
             // Menampilkan opsi untuk edit profil atau logout

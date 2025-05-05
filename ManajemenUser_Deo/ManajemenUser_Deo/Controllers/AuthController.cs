@@ -59,9 +59,6 @@ namespace ManajemenUser_Deo.Controllers
             {
                 Console.WriteLine("Email atau password salah.");
             }
-
-            
-
         }
     }
 }

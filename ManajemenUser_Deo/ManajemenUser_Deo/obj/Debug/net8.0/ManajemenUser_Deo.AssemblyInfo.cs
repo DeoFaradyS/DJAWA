@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManajemenUser_Deo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1926e280aab4e0e671320ed6eefb89dd002c42e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ed298973b4b6808194eb4b304519f5191edafd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManajemenUser_Deo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManajemenUser_Deo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
