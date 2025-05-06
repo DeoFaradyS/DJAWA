@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\ordermanagementapi\\models\\orderstatustransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:models\\orderstatustransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\ordermanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\ordermanagementapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\ordermanagementapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\ordermanagementapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:40:39.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:39:47.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:37:53.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderStatusTransition.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Models\\OrderStatusTransition.cs",
+              "RelativeDocumentMoniker": "Models\\OrderStatusTransition.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Models\\OrderStatusTransition.cs",
+              "RelativeToolTip": "Models\\OrderStatusTransition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:36:55.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\OrderManagementAPI\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:34:43.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
