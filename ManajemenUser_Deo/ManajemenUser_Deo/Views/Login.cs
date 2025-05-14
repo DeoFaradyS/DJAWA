@@ -1,23 +1,22 @@
 ﻿using ManajemenUser_Deo.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace ManajemenUser_Deo.Views
 {
-    internal class Login
+    class Login
     {
+        private readonly AuthController _authController = new AuthController();
+
         public void ShowLoginForm(string message = "")
         {
             Console.Clear();
-            if (!string.IsNullOrEmpty(message)) 
+
+            if (!string.IsNullOrEmpty(message))
             {
-                Console.WriteLine(message);
+                Console.WriteLine(message + "\n");
             }
-            Console.WriteLine("=== Login ===");
+
+            // Input User
+            Console.WriteLine("=== Login ===\n");
 
             Console.Write("Masukkan email: ");
             string email = Console.ReadLine();
@@ -25,9 +24,7 @@ namespace ManajemenUser_Deo.Views
             Console.Write("Masukkan password: ");
             string password = Console.ReadLine();
 
-            // Panggil controller
-            var auth = new AuthController();
-            auth.Login(email, password);
+            _authController.Login(email, password);
         }
     }
 }

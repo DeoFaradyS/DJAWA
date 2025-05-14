@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenUser_Deo", "Manaje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagementTest", "UserManagementTest\UserManagementTest.csproj", "{BEE57A5E-1A6B-41BE-ADED-6E3407E38CCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonHelper", "JsonHelper\JsonHelper.csproj", "{E401C6AD-FB39-48DA-ADE7-BB0E18A2A3F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BEE57A5E-1A6B-41BE-ADED-6E3407E38CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEE57A5E-1A6B-41BE-ADED-6E3407E38CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEE57A5E-1A6B-41BE-ADED-6E3407E38CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E401C6AD-FB39-48DA-ADE7-BB0E18A2A3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E401C6AD-FB39-48DA-ADE7-BB0E18A2A3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E401C6AD-FB39-48DA-ADE7-BB0E18A2A3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E401C6AD-FB39-48DA-ADE7-BB0E18A2A3F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

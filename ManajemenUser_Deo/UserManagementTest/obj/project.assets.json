@@ -685,9 +685,22 @@
           }
         }
       },
+      "JsonHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/JsonHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JsonHelper.dll": {}
+        }
+      },
       "ManajemenUser_Deo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "JsonHelper": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ManajemenUser_Deo.dll": {}
         },
@@ -1653,6 +1666,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "JsonHelper/1.0.0": {
+      "type": "project",
+      "path": "../JsonHelper/JsonHelper.csproj",
+      "msbuildProject": "../JsonHelper/JsonHelper.csproj"
     },
     "ManajemenUser_Deo/1.0.0": {
       "type": "project",

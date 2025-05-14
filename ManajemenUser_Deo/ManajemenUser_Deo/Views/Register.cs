@@ -1,14 +1,10 @@
 ﻿using ManajemenUser_Deo.Controllers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManajemenUser_Deo.Views
 {
-    public class Register
+    class Register
     {
+        private readonly AuthController _authController = new AuthController();
         public void ShowRegistrationForm()
         {
             Console.Clear();
@@ -23,9 +19,7 @@ namespace ManajemenUser_Deo.Views
             Console.Write("Masukkan password: ");
             string password = Console.ReadLine();
 
-            // Panggil controller
-            var auth = new AuthController();
-            auth.Register(name, email, password);
+            _authController.Register(name, email, password);
         }
     }
 }
