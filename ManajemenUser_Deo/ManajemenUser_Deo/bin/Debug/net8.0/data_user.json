@@ -8,19 +8,11 @@
     "Role": 1
   },
   {
-    "Id": 1,
-    "Name": "deo",
-    "Email": "deo",
-    "Password": "deo",
-    "CreatedAt": "2025-05-05T18:36:40.6267508+07:00",
-    "Role": 1
-  },
-  {
     "Id": 2,
-    "Name": "2",
-    "Email": "2",
-    "Password": "2",
-    "CreatedAt": "2025-05-05T18:41:55.0154231+07:00",
+    "Name": "dea",
+    "Email": "dea",
+    "Password": "dea",
+    "CreatedAt": "2025-05-16T03:02:21.3385306+07:00",
     "Role": 1
   }
 ]

@@ -1,43 +1,69 @@
-﻿using ManajemenUser_Deo.Views;
+﻿using System.Diagnostics;
+using ManajemenUser_Deo.UserManagement;
 
 namespace ManajemenUser_Deo.Controllers
 {
     class AuthController
     {
-        private UserController userController = new UserController();
+        private UserController _userController = new UserController();
 
-        // Mendaftarkan user baru ke dalam sistem.
-        public void Register(string name, string email, string password)
+        /// <summary>
+        /// Mendaftarkan user baru ke sistem.
+        /// Mengembalikan false jika email sudah terdaftar.
+        /// </summary>
+        public bool Register(string name, string email, string password)
         {
-            if (userController.CheckIfEmailExists(email))
+            // Precondition: input tidak boleh null atau kosong
+            Debug.Assert(!string.IsNullOrEmpty(name), "Name harus diisi");
+            Debug.Assert(!string.IsNullOrEmpty(email), "Email harus diisi");
+            Debug.Assert(!string.IsNullOrEmpty(password), "Password harus diisi");
+
+            if (_userController.CheckIfEmailExists(email))
             {
                 Console.WriteLine("\nEmail sudah digunakan. Silakan gunakan email lain.");
-                return;
+                Console.ReadKey();
+                return false;
             }
 
-            var newUser = userController.CreateUser(name, email, password);
-            Console.WriteLine($"Registrasi berhasil! Selamat datang, {newUser.Name}.");
+            var newUser = _userController.CreateUser(name, email, password);
 
-            var loginView = new Login();
-            loginView.ShowLoginForm("Registrasi berhasil!\n");
+            // Postcondition: user baru harus berhasil dibuat dan emailnya sesuai
+            Debug.Assert(newUser != null, "User baru harus berhasil dibuat");
+            Debug.Assert(newUser.Email == email, "Email user baru harus sama dengan input");
+
+            Console.WriteLine($"\nRegistrasi berhasil! Silakan login untuk melanjutkan.");
+            Console.ReadKey();
+            return true;
         }
 
-        // Melakukan proses login pengguna berdasarkan email dan password.
-        public void Login(string email, string password)
+        /// <summary>
+        /// Melakukan autentikasi user berdasarkan email dan password.
+        /// Mengembalikan objek User jika berhasil, null jika gagal.
+        /// </summary>
+        public User Login(string email, string password)
         {
-            var authenticatedUser = userController.FindUserByCredentials(email, password);
+            // Precondition: input tidak boleh null atau kosong
+            Debug.Assert(!string.IsNullOrEmpty(email), "Email harus diisi");
+            Debug.Assert(!string.IsNullOrEmpty(password), "Password harus diisi");
+
+            var authenticatedUser = _userController.FindUserByCredentials(email, password);
 
             if (authenticatedUser == null)
             {
                 Console.WriteLine("Email atau password salah.");
-                return;
+                Console.ReadKey();
+                return null;
             }
 
-            var profileView = new Profile();
-            profileView.ShowProfile(authenticatedUser);
+            // Postcondition: authenticatedUser tidak boleh null saat login berhasil
+            Debug.Assert(authenticatedUser != null, "User yang terautentikasi tidak boleh null");
+
+            return authenticatedUser;
         }
 
-        // Melakukan logout dan menampilkan pesan konfirmasi.
+        /// <summary>
+        /// Proses logout user dengan menampilkan konfirmasi.
+        /// </summary>
         public void Logout()
         {
             Console.WriteLine("\nAnda berhasil logout.");

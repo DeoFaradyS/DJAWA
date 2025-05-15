@@ -6,25 +6,42 @@ namespace ManajemenUser_Deo.Views
     {
         private readonly AuthController _authController = new AuthController();
 
-        public void ShowLoginForm(string message = "")
+        public void ShowLoginForm()
         {
-            Console.Clear();
-
-            if (!string.IsNullOrEmpty(message))
+            while (true)
             {
-                Console.WriteLine(message + "\n");
+                Console.Clear();
+
+                Console.WriteLine("=== Login ===");
+
+                Console.Write("Masukkan email: ");
+                string email = Console.ReadLine();
+
+                Console.Write("Masukkan password: ");
+                string password = Console.ReadLine();
+
+                if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+                {
+                    Console.WriteLine("\nEmail dan password tidak boleh kosong. Silakan coba lagi.");
+                    Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                var user = _authController.Login(email, password);
+                if (user != null)
+                {
+                    var profileView = new Profile();
+                    profileView.ShowProfile(user);
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("\nEmail atau password salah. Silakan coba lagi.");
+                    Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
+                    Console.ReadKey();
+                }
             }
-
-            // Input User
-            Console.WriteLine("=== Login ===\n");
-
-            Console.Write("Masukkan email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("Masukkan password: ");
-            string password = Console.ReadLine();
-
-            _authController.Login(email, password);
         }
     }
 }

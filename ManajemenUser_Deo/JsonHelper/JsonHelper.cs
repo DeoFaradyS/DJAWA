@@ -3,36 +3,55 @@
 namespace JsonHelper
 {
     /// <summary>
-    /// Kelas ini menyediakan metode untuk memuat dan menyimpan data dalam format JSON.
+    /// Utility untuk menyimpan dan memuat data JSON.
     /// </summary>
-    public class JsonHelper
+    public static class JsonHelper
     {
         /// <summary>
-        /// Menyimpan data ke dalam file JSON di lokasi yang ditentukan.
+        /// Simpan data ke file JSON.
         /// </summary>
-        /// <typeparam name="T">Tipe data yang akan diserialisasi ke dalam JSON.</typeparam>
-        /// <param name="data">Data yang akan disimpan dalam file JSON.</param>
-        /// <param name="filePath">Lokasi file tempat data akan disimpan.</param>
         public static void SaveToJson<T>(List<T> data, string filePath)
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            var jsonString = JsonSerializer.Serialize(data, options);
-            File.WriteAllText(filePath, jsonString);
+            if (string.IsNullOrWhiteSpace(filePath))
+                throw new ArgumentException("File path tidak boleh kosong.", nameof(filePath));
+
+            try
+            {
+                var json = JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(filePath, json);
+            }
+            catch (Exception ex)
+            {
+                // Bisa ganti ke logging framework jika perlu
+                Console.Error.WriteLine($"Gagal menyimpan data ke JSON: {ex.Message}");
+                throw;
+            }
         }
 
         /// <summary>
-        /// Memuat data dari file JSON yang disimpan di lokasi yang ditentukan.
+        /// Muat data dari file JSON.
         /// </summary>
-        /// <typeparam name="T">Tipe data yang akan dideserialisasi dari JSON.</typeparam>
-        /// <param name="filePath">Lokasi file tempat data disimpan.</param>
-        /// <returns>Daftar data yang dimuat dari file JSON.</returns>
         public static List<T> LoadFromJson<T>(string filePath)
         {
-            if (!File.Exists(filePath))
-                return new List<T>();
+            if (string.IsNullOrWhiteSpace(filePath))
+                throw new ArgumentException("File path tidak boleh kosong.", nameof(filePath));
 
-            var jsonString = File.ReadAllText(filePath);
-            return JsonSerializer.Deserialize<List<T>>(jsonString) ?? new List<T>();
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine("File JSON tidak ditemukan, mengembalikan list kosong.");
+                return new List<T>();
+            }
+
+            try
+            {
+                var json = File.ReadAllText(filePath);
+                return JsonSerializer.Deserialize<List<T>>(json) ?? new List<T>();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Gagal memuat data dari JSON: {ex.Message}");
+                return new List<T>();
+            }
         }
     }
 }

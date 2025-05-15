@@ -5,28 +5,35 @@ namespace ManajemenUser_Deo.Views
 {
     class Profile
     {
-        private UserController _userController = new UserController();
+        private readonly UserController _userController = new UserController();
+        private readonly AuthController _authController = new AuthController();
 
         public void ShowProfile(User user)
         {
-            Console.Clear();
-            _userController.PrintUserDetails(user);
-            string choice = ShowProfileOptions();
+            bool isRunning = true;
 
-            switch (choice)
+            while (isRunning) 
             {
-                case "1":
-                    EditProfile(user);
-                    break;
-                case "2":
-                    var auth = new AuthController();
-                    auth.Logout();
-                    break;
-                default:
-                    Console.WriteLine("\nOpsi tidak valid. Tekan tombol apa saja untuk lanjut...");
-                    Console.ReadKey();
-                    break;
-            }
+                Console.Clear();
+                _userController.PrintUserDetails(user);
+
+                string choice = ShowProfileOptions();
+
+                switch (choice)
+                {
+                    case "1":
+                        EditProfile(user);
+                        break;
+                    case "2":
+                        _authController.Logout();
+                        isRunning = false;
+                        break;
+                    default:
+                        Console.WriteLine("\nOpsi tidak valid. Tekan tombol apa saja untuk lanjut...");
+                        Console.ReadKey();
+                        break;
+                }
+            }            
         }
 
         private string ShowProfileOptions()
@@ -42,6 +49,7 @@ namespace ManajemenUser_Deo.Views
         {
             Console.Clear();
             Console.WriteLine("=== Edit Profile ===");
+
             Console.Write($"Masukkan nama baru (kosongkan untuk tetap, current: {user.Name}): ");
             string newName = Console.ReadLine();
             if (!string.IsNullOrEmpty(newName)) user.Name = newName;
@@ -58,17 +66,12 @@ namespace ManajemenUser_Deo.Views
             bool updateSuccess = _userController.UpdateProfile(user.Id, user.Name, user.Email, user.Password);
 
             // Tampilkan hasil update
-            if (updateSuccess)
-            {
-                Console.WriteLine("\nProfil telah berhasil diperbarui.");
-            }
-            else
-            {
-                Console.WriteLine("\nTerjadi kesalahan saat memperbarui profil.");
-            }
+            Console.WriteLine(updateSuccess
+                ? "\nProfil telah berhasil diperbarui."
+                : "\nTerjadi kesalahan saat memperbarui profil.");
 
             Console.ReadKey();
-            ShowProfile(user); // Tampilkan kembali profil yang sudah diperbarui
+            return;
         }
 
     }

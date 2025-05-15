@@ -583,7 +583,18 @@
       },
       "System.Diagnostics.DiagnosticSource/5.0.0": {},
       "System.Reflection.Metadata/1.6.0": {},
+      "JsonHelper/1.0.0": {
+        "runtime": {
+          "JsonHelper.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ManajemenUser_Deo/1.0.0": {
+        "dependencies": {
+          "JsonHelper": "1.0.0"
+        },
         "runtime": {
           "ManajemenUser_Deo.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -725,6 +736,11 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "JsonHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ManajemenUser_Deo/1.0.0": {
       "type": "project",

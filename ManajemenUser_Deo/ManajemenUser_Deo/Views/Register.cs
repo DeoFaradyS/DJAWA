@@ -7,19 +7,37 @@ namespace ManajemenUser_Deo.Views
         private readonly AuthController _authController = new AuthController();
         public void ShowRegistrationForm()
         {
-            Console.Clear();
-            Console.WriteLine("=== Registrasi ===");
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("=== Registrasi ===");
 
-            Console.Write("Masukkan nama: ");
-            string name = Console.ReadLine();
+                Console.Write("Masukkan nama: ");
+                string name = Console.ReadLine();
 
-            Console.Write("Masukkan email: ");
-            string email = Console.ReadLine();
+                Console.Write("Masukkan email: ");
+                string email = Console.ReadLine();
 
-            Console.Write("Masukkan password: ");
-            string password = Console.ReadLine();
+                Console.Write("Masukkan password: ");
+                string password = Console.ReadLine();
 
-            _authController.Register(name, email, password);
+                if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+                {
+                    Console.WriteLine("\nSemua field harus diisi! Silakan coba lagi.");
+                    Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                bool success = _authController.Register(name, email, password);
+                if (success)
+                {
+                    var loginView = new Login();
+                    loginView.ShowLoginForm();
+                    break;
+                }
+            }
         }
+
     }
 }
