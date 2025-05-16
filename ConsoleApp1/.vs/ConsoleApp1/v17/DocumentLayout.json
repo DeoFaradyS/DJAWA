@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|c:\\matkul kontruksi\\konstruksiperangkatlunak-04-05\\minggu ke 4\\tugas praktikum\\uts - copy\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0928CCCC-03AA-427C-8BD7-BB1CA4CED592}|OrderApp.Tests\\OrderApp.Tests.csproj|c:\\matkul kontruksi\\konstruksiperangkatlunak-04-05\\minggu ke 4\\tugas praktikum\\uts - copy\\consoleapp1\\orderapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0928CCCC-03AA-427C-8BD7-BB1CA4CED592}|OrderApp.Tests\\OrderApp.Tests.csproj|solutionrelative:orderapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0928CCCC-03AA-427C-8BD7-BB1CA4CED592}|OrderApp.Tests\\OrderApp.Tests.csproj|c:\\matkul kontruksi\\konstruksiperangkatlunak-04-05\\minggu ke 4\\tugas praktikum\\uts - copy\\consoleapp1\\orderapp.tests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0928CCCC-03AA-427C-8BD7-BB1CA4CED592}|OrderApp.Tests\\OrderApp.Tests.csproj|solutionrelative:orderapp.tests\\orderservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|c:\\matkul kontruksi\\konstruksiperangkatlunak-04-05\\minggu ke 4\\tugas praktikum\\uts - copy\\consoleapp1\\consoleapp1\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|c:\\matkul kontruksi\\konstruksiperangkatlunak-04-05\\minggu ke 4\\tugas praktikum\\uts - copy\\consoleapp1\\consoleapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F038B248-A5DE-40BA-B5D5-0C852C7D2785}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\Order.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Order.cs",
+              "ToolTip": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\Order.cs",
+              "RelativeToolTip": "ConsoleApp1\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:48:16.102Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\OrderService.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\OrderService.cs",
+              "ToolTip": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\OrderService.cs",
+              "RelativeToolTip": "ConsoleApp1\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:47:11.535Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderServiceTests.cs",
+              "DocumentMoniker": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\OrderApp.Tests\\OrderServiceTests.cs",
+              "RelativeDocumentMoniker": "OrderApp.Tests\\OrderServiceTests.cs",
+              "ToolTip": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\OrderApp.Tests\\OrderServiceTests.cs",
+              "RelativeToolTip": "OrderApp.Tests\\OrderServiceTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T06:05:15.483Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\OrderApp.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "OrderApp.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\OrderApp.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "OrderApp.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T03:44:26.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\MATKUL KONTRUKSI\\KonstruksiPerangkatLunak-04-05\\Minggu ke 4\\Tugas Praktikum\\UTS - Copy\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T05:59:37.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
