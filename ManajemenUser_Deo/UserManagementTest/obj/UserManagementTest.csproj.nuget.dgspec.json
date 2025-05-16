@@ -166,6 +166,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\JsonHelper\\JsonHelper.csproj": {
+                "projectPath": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\JsonHelper\\JsonHelper.csproj"
+              },
               "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\ManajemenUser_Deo.csproj": {
                 "projectPath": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\DJAWA_TUGAS BESAR\\ManajemenUser_Deo\\ManajemenUser_Deo\\ManajemenUser_Deo.csproj"
               }
@@ -195,6 +198,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             }
           },
           "imports": [

@@ -38,11 +38,11 @@ class Program
                 return true;
             case "3":
                 Console.WriteLine("\nKeluar dari aplikasi...");
-                Console.ReadKey();
+                Thread.Sleep(2000);
                 return false;
             default:
                 Console.WriteLine("\nInput tidak dikenali. Silakan coba lagi.");
-                Console.ReadKey();
+                Thread.Sleep(2000);
                 return true;
         }
     }

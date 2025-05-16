@@ -24,7 +24,7 @@ namespace ManajemenUser_Deo.Views
                 {
                     Console.WriteLine("\nEmail dan password tidak boleh kosong. Silakan coba lagi.");
                     Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
-                    Console.ReadKey();
+                    Thread.Sleep(2000);
                     continue;
                 }
 
@@ -39,7 +39,7 @@ namespace ManajemenUser_Deo.Views
                 {
                     Console.WriteLine("\nEmail atau password salah. Silakan coba lagi.");
                     Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
-                    Console.ReadKey();
+                    Thread.Sleep(2000);
                 }
             }
         }

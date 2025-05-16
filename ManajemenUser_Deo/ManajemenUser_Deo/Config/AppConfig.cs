@@ -3,11 +3,11 @@
     /// <summary>
     /// Kelas ini menyimpan konfigurasi aplikasi yang bersifat global.
     /// </summary>
-    class AppConfig
+    public class AppConfig
     {
         /// <summary>
         /// Menyimpan path lokasi file data pengguna.
         /// </summary>
-        public const string UserDataPath = "data_user.json";
+        public static string UserDataPath { get; set; } = "test_users.json";
     }
 }

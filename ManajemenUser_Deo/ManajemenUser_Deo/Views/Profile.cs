@@ -30,7 +30,7 @@ namespace ManajemenUser_Deo.Views
                         break;
                     default:
                         Console.WriteLine("\nOpsi tidak valid. Tekan tombol apa saja untuk lanjut...");
-                        Console.ReadKey();
+                        Thread.Sleep(2000);
                         break;
                 }
             }            
@@ -70,7 +70,7 @@ namespace ManajemenUser_Deo.Views
                 ? "\nProfil telah berhasil diperbarui."
                 : "\nTerjadi kesalahan saat memperbarui profil.");
 
-            Console.ReadKey();
+            Thread.Sleep(2000);
             return;
         }
 

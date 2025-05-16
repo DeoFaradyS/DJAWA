@@ -25,7 +25,7 @@ namespace ManajemenUser_Deo.Views
                 {
                     Console.WriteLine("\nSemua field harus diisi! Silakan coba lagi.");
                     Console.WriteLine("Tekan tombol apa saja untuk melanjutkan...");
-                    Console.ReadKey();
+                    Thread.Sleep(2000);
                     continue;
                 }
 

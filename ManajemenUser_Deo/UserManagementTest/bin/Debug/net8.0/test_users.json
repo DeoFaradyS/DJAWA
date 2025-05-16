@@ -1,0 +1,10 @@
+[
+  {
+    "Id": 1,
+    "Name": "New User",
+    "Email": "existing@example.com",
+    "Password": "newpass",
+    "CreatedAt": "2025-05-16T10:55:28.0655642+07:00",
+    "Role": 1
+  }
+]

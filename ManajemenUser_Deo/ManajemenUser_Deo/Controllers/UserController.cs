@@ -9,7 +9,13 @@ namespace ManajemenUser_Deo.Controllers
     /// </summary>
     public class UserController
     {
-        private const string FilePath = AppConfig.UserDataPath;
+        private string FilePath;
+
+        public UserController(string? filePath = null)
+        {
+            FilePath = filePath ?? AppConfig.UserDataPath;
+        }
+
 
         /// <summary>
         /// Memuat daftar pengguna dari file JSON.

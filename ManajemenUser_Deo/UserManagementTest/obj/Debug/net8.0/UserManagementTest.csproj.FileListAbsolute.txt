@@ -175,3 +175,8 @@ D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser
 D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\obj\Debug\net8.0\ref\UserManagementTest.dll
 D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\JsonHelper.dll
 D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\JsonHelper.pdb
+D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\Castle.Core.dll
+D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\Moq.dll
+D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\DJAWA_TUGAS BESAR\ManajemenUser_Deo\UserManagementTest\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll

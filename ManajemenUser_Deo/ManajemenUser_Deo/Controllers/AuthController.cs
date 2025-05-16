@@ -3,9 +3,14 @@ using ManajemenUser_Deo.UserManagement;
 
 namespace ManajemenUser_Deo.Controllers
 {
-    class AuthController
+    public class AuthController
     {
-        private UserController _userController = new UserController();
+        private UserController _userController;
+
+        public AuthController(UserController? userController = null)
+        {
+            _userController = userController ?? new UserController();
+        }
 
         /// <summary>
         /// Mendaftarkan user baru ke sistem.
@@ -21,7 +26,7 @@ namespace ManajemenUser_Deo.Controllers
             if (_userController.CheckIfEmailExists(email))
             {
                 Console.WriteLine("\nEmail sudah digunakan. Silakan gunakan email lain.");
-                Console.ReadKey();
+                Thread.Sleep(2000);
                 return false;
             }
 
@@ -32,7 +37,7 @@ namespace ManajemenUser_Deo.Controllers
             Debug.Assert(newUser.Email == email, "Email user baru harus sama dengan input");
 
             Console.WriteLine($"\nRegistrasi berhasil! Silakan login untuk melanjutkan.");
-            Console.ReadKey();
+            Thread.Sleep(2000);
             return true;
         }
 
@@ -51,7 +56,7 @@ namespace ManajemenUser_Deo.Controllers
             if (authenticatedUser == null)
             {
                 Console.WriteLine("Email atau password salah.");
-                Console.ReadKey();
+                Thread.Sleep(2000);
                 return null;
             }
 
@@ -67,7 +72,7 @@ namespace ManajemenUser_Deo.Controllers
         public void Logout()
         {
             Console.WriteLine("\nAnda berhasil logout.");
-            Console.ReadKey();
+            Thread.Sleep(2000);
         }
     }
 }
