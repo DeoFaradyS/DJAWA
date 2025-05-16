@@ -1,0 +1,6 @@
+@PesananLibrary_HostAddress = http://localhost:5232
+
+GET {{PesananLibrary_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

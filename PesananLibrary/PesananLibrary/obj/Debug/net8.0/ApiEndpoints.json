@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "TransaksiAPI.Controllers.PesananController",
+    "Method": "GetAll",
+    "RelativePath": "api/Pesanan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransaksiAPI.Controllers.PesananController",
+    "Method": "Tambah",
+    "RelativePath": "api/Pesanan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pesanan",
+        "Type": "TransaksiAPI.Models.Pesanan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransaksiAPI.Controllers.PesananController",
+    "Method": "GetById",
+    "RelativePath": "api/Pesanan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransaksiAPI.Controllers.PesananController",
+    "Method": "Hapus",
+    "RelativePath": "api/Pesanan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TransaksiAPI.Controllers.PesananController",
+    "Method": "Konfirmasi",
+    "RelativePath": "api/Pesanan/{id}/konfirmasi",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
