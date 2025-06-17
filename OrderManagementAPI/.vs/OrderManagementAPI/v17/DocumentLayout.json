@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2759A784-ECA8-40A0-870F-150E7C1053A0}|..\\OrderManagementTests\\OrderManagementTests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\djawa\\ordermanagementtests\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\djawa\\ordermanagementapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\djawa\\ordermanagementapi\\models\\orderstatustransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:models\\orderstatustransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\djawa\\ordermanagementapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|c:\\semester 6\\konstruksi perangkat lunak\\uts\\djawa\\ordermanagementapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F18C1D0-83B5-4B35-81FA-21B00632DDC8}|OrderManagementAPI.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test1.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementTests\\Test1.cs",
+              "RelativeDocumentMoniker": "..\\OrderManagementTests\\Test1.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementTests\\Test1.cs",
+              "RelativeToolTip": "..\\OrderManagementTests\\Test1.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAhwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T09:28:03.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:52:24.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderStatusTransition.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Models\\OrderStatusTransition.cs",
+              "RelativeDocumentMoniker": "Models\\OrderStatusTransition.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Models\\OrderStatusTransition.cs",
+              "RelativeToolTip": "Models\\OrderStatusTransition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:52:23.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:52:21.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\UTS\\DJAWA\\OrderManagementAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T07:52:20.294Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
