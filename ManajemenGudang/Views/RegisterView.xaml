@@ -6,22 +6,23 @@
     <Window.DataContext>
         <vm:RegisterViewModel/>
     </Window.DataContext>
-    <StackPanel Margin="20">
-        <TextBlock Text="Buat Akun Baru" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
-        <TextBlock Text="Username:" Margin="0,0,0,5"/>
-        <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,15"/>
+    <StackPanel Margin="16,16,16,16">
+        <TextBlock Text="Create an Account" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" Text="Please login to continue managing your items." VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,24" FontSize="14" Foreground="#FFA4A4A4"/>
+        <TextBlock Text="Username" Margin="0,0,0,4" FontSize="14"/>
+        <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,12" Height="28" VerticalAlignment="Center" FontSize="14" Padding="4,0,0,0"/>
 
-        <TextBlock Text="Password:" Margin="0,0,0,5"/>
-        <PasswordBox x:Name="PasswordInput" Margin="0,0,0,20"/>
+        <TextBlock Text="Password" Margin="0,0,0,4" FontSize="14"/>
+        <PasswordBox x:Name="PasswordInput" Margin="0,0,0,16" Height="28" VerticalAlignment="Center" FontSize="14" Padding="4,0,0,0"/>
 
-        <Button Content="Daftar" Padding="10,7" IsDefault="True"
+        <Button Content="Register" Padding="-2,0,0,0" IsDefault="True"
                 Command="{Binding RegisterCommand}"
-                CommandParameter="{Binding ElementName=PasswordInput}"/>
+                CommandParameter="{Binding ElementName=PasswordInput}" BorderBrush="#FF4169B2" Foreground="White" FontSize="14" FontWeight="SemiBold" Background="#FF4169B2" Margin="0,0,0,16" Height="32"/>
 
-        <Button Content="Sudah punya akun? Login" Margin="0,10,0,0"
+        <Button Content="Already have an account? Login here"
             Command="{Binding BackToLoginCommand}"
-            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}"/>
+            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Padding="0,0,0,0"/>
     </StackPanel>
-    
-    
+
+
 </Window>

@@ -3,39 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:ManajemenGudang.ViewModels"
         Title="Login Gudang" Height="350" Width="400" WindowStartupLocation="CenterScreen">
-
     <Window.DataContext>
-        <vm:LoginViewModel />
+        <vm:LoginViewModel/>
     </Window.DataContext>
-
-    <StackPanel Margin="16">
+    <StackPanel Margin="16,16,16,16">
         <TextBlock Text="Welcome Back" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
-        <TextBlock Text="Please login to continue managing your items." 
-                   TextWrapping="Wrap" HorizontalAlignment="Center" 
-                   Margin="0,0,0,24" FontSize="14" Foreground="#FFA4A4A4"/>
-
+        <TextBlock TextWrapping="Wrap" Text="Please login to continue managing your items." HorizontalAlignment="Center" Margin="0,0,0,24" FontSize="14" Foreground="#FFA4A4A4"/>
         <TextBlock Text="Username" Margin="0,0,0,4" FontSize="14"/>
-        <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,0,0,12" Height="28" FontSize="14" 
-                 VerticalContentAlignment="Center" Padding="4,0,0,0"/>
+        <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,12" Height="28" FontSize="14" VerticalContentAlignment="Center" Padding="4,0,0,0"/>
 
         <TextBlock Text="Password" Margin="0,0,0,4" FontSize="14"/>
-        <PasswordBox x:Name="LoginPasswordBox" Margin="0,0,0,16" 
-                     FontSize="14" Height="28" PasswordChar="*" 
-                     VerticalContentAlignment="Center" Padding="4,0,0,0"/>
+        <PasswordBox x:Name="LoginPasswordBox" Margin="0,0,0,16" FontSize="14" Height="28" PasswordChar="*" VerticalContentAlignment="Center" Padding="4,0,0,0"/>
 
         <Button Content="Login" Padding="0,0,0,0" IsDefault="True"
                 Command="{Binding LoginCommand}"
-                CommandParameter="{Binding ElementName=LoginPasswordBox}"
-                VerticalContentAlignment="Center" Height="32" 
-                HorizontalContentAlignment="Center" 
-                FontSize="14" FontWeight="SemiBold" 
-                Background="#FF4169B2" Foreground="White" 
-                BorderBrush="#FF4169B2" Margin="0,0,0,16"/>
+                CommandParameter="{Binding ElementName=LoginPasswordBox}" Click="Button_Click" VerticalContentAlignment="Center" Height="32" UseLayoutRounding="False" HorizontalContentAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold" Background="#FF4169B2" Foreground="White" BorderBrush="#FF4169B2" Margin="0,0,0,16"/>
 
         <Button Content="Don’t have an account? Register here" 
                 Command="{Binding OpenRegisterViewCommand}" 
-                Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" 
-                Padding="0,0,0,0"/>
+                Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Padding="0,0,0,0"/>
     </StackPanel>
 </Window>

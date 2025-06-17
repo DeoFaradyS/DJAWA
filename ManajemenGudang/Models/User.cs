@@ -5,6 +5,8 @@ namespace ManajemenGudang.Models
     {
         public int Id { get; set; }
         public string Username { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty; // Peringatan: Jangan simpan password plain text di aplikasi nyata!
+        public string Password { get; set; } = string.Empty;
+        public ICollection<Barang> Barangs { get; set; } = new List<Barang>();
+        public string Role { get; set; } = string.Empty;
     }
 }
