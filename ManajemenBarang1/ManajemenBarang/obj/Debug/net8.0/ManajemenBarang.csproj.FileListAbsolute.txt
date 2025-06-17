@@ -1,0 +1,58 @@
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.exe
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.deps.json
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.runtimeconfig.json
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.pdb
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.GeneratedMSBuildEditorConfig.editorconfig
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfoInputs.cache
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfo.cs
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.csproj.CoreCompileInputs.cache
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.sourcelink.json
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\refint\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.pdb
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.genruntimeconfig.cache
+D:\SEMESTER 6\DJAWA\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ref\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.exe
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.deps.json
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.runtimeconfig.json
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.pdb
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.GeneratedMSBuildEditorConfig.editorconfig
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfoInputs.cache
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfo.cs
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.csproj.CoreCompileInputs.cache
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.sourcelink.json
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\refint\ManajemenBarang.dll
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.pdb
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.genruntimeconfig.cache
+D:\SEMESTER 6\DJAWA\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ref\ManajemenBarang.dll
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfoInputs.cache
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfo.cs
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.csproj.CoreCompileInputs.cache
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.dll
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\refint\ManajemenBarang.dll
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.pdb
+C:\Users\asti\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.exe
+C:\Users\asti\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.deps.json
+C:\Users\asti\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.runtimeconfig.json
+C:\Users\asti\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.dll
+C:\Users\asti\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.pdb
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.genruntimeconfig.cache
+C:\Users\asti\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ref\ManajemenBarang.dll
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.exe
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.deps.json
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.runtimeconfig.json
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.dll
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\bin\Debug\net8.0\ManajemenBarang.pdb
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfoInputs.cache
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.AssemblyInfo.cs
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.csproj.CoreCompileInputs.cache
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.dll
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\refint\ManajemenBarang.dll
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.pdb
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ManajemenBarang.genruntimeconfig.cache
+D:\ASTI_ManajemenBarang\ManajemenBarang\ManajemenBarang\obj\Debug\net8.0\ref\ManajemenBarang.dll

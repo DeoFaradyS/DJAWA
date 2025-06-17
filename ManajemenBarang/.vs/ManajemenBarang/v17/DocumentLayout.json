@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|d:\\semester 6\\djawa\\djawa\\manajemenbarang\\manajemenbarang\\manajemenbarang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|solutionrelative:manajemenbarang\\manajemenbarang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|d:\\semester 6\\djawa\\djawa\\manajemenbarang\\manajemenbarang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|solutionrelative:manajemenbarang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|d:\\semester 6\\djawa\\djawa\\manajemenbarang\\manajemenbarang\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB36BB15-E5E9-4121-88EF-3B3B9915F2FA}|ManajemenBarang\\ManajemenBarang.csproj|solutionrelative:manajemenbarang\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Barang.cs",
+              "DocumentMoniker": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\Barang.cs",
+              "RelativeDocumentMoniker": "ManajemenBarang\\Barang.cs",
+              "ToolTip": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\Barang.cs",
+              "RelativeToolTip": "ManajemenBarang\\Barang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:54:04.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManajemenBarang.cs",
+              "DocumentMoniker": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\ManajemenBarang.cs",
+              "RelativeDocumentMoniker": "ManajemenBarang\\ManajemenBarang.cs",
+              "ToolTip": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\ManajemenBarang.cs",
+              "RelativeToolTip": "ManajemenBarang\\ManajemenBarang.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAcwHEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:33:19.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\Program.cs",
+              "RelativeDocumentMoniker": "ManajemenBarang\\Program.cs",
+              "ToolTip": "D:\\SEMESTER 6\\DJAWA\\DJAWA\\ManajemenBarang\\ManajemenBarang\\Program.cs",
+              "RelativeToolTip": "ManajemenBarang\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:32:11.091Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
