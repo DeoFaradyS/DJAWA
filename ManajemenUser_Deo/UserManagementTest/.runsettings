@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RunSettings>
-  <RunConfiguration>
-    <!-- Maksimal core CPU untuk test dijalankan 1 (berarti serial, tidak paralel) -->
-    <MaxCpuCount>1</MaxCpuCount>
-  </RunConfiguration>
-</RunSettings>
