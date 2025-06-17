@@ -1,0 +1,10 @@
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.csproj.AssemblyReference.cache
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.Form1.resources
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.Properties.Resources.resources
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.csproj.GenerateResource.cache
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.csproj.CoreCompileInputs.cache
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\bin\Debug\ManajemenPesananSederhana.exe.config
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\bin\Debug\ManajemenPesananSederhana.exe
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\bin\Debug\ManajemenPesananSederhana.pdb
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.exe
+C:\MATKUL KONTRUKSI\KonstruksiPerangkatLunak-04-05\UAS COBA\ManajemenPesananSederhana\obj\Debug\ManajemenPesananSederhana.pdb
