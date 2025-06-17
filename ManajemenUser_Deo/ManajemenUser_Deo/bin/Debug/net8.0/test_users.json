@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 1,
+    "Name": "Alice",
+    "Email": "alice@example.com",
+    "Password": "1234",
+    "CreatedAt": "2025-05-01T10:00:00",
+    "Role": 0
+  },
+  {
+    "Id": 2,
+    "Name": "Bob",
+    "Email": "bob@example.com",
+    "Password": "5678",
+    "CreatedAt": "2025-05-02T11:00:00",
+    "Role": 0
+  },
+  {
+    "Id": 3,
+    "Name": "damai",
+    "Email": "damai",
+    "Password": "damai",
+    "CreatedAt": "2025-05-16T11:06:14.8441105+07:00",
+    "Role": 1
+  },
+  {
+    "Id": 4,
+    "Name": "dina monica",
+    "Email": "dina monica",
+    "Password": "dina monica",
+    "CreatedAt": "2025-05-16T11:21:11.8661693+07:00",
+    "Role": 1
+  }
+]
