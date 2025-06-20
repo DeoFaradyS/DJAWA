@@ -1,4 +1,5 @@
 ﻿// File: ViewModels/RiwayatBarangViewModel.cs
+// (MODIFIED FOR TESTABILITY)
 
 using ManajemenGudang.Data;
 using ManajemenGudang.Models;
@@ -10,28 +11,39 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
-namespace ManajemenGudang.ViewModels // <-- Pastikan namespace ini benar
+namespace ManajemenGudang.ViewModels
 {
-    // Pastikan class ini mewarisi ViewModelBase
     public class RiwayatBarangViewModel : ViewModelBase
     {
-        private readonly AppDbContext _context = new();
+        private readonly AppDbContext _context; // Dihapus ' = new()'
         private readonly User? _currentUser;
         public string SearchText { get; set; } = "";
-        public ObservableCollection<Barang> DaftarBarang { get; set; } = new();
+        public ObservableCollection<Barang> DaftarBarang { get; set; }
 
         public ICommand? OpenTambahBarangViewCommand { get; }
         public ICommand? CariBarangCommand { get; }
 
-        public RiwayatBarangViewModel()
+        // Constructor default untuk WPF
+        public RiwayatBarangViewModel() : this(new AppDbContext())
         {
+        }
+
+        // Constructor untuk DI dan Unit Testing
+        public RiwayatBarangViewModel(AppDbContext context)
+        {
+            _context = context;
+            DaftarBarang = new ObservableCollection<Barang>();
+
+            // Baris ini opsional di dalam test, karena bisa menyebabkan error jika dijalankan di Designer
+            // Tapi kita biarkan agar fungsionalitas di aplikasi utama tetap sama.
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
 
             _currentUser = AuthenticationService.GetInstance().CurrentUser;
             if (_currentUser == null)
             {
+                // Di aplikasi nyata, ini akan menutup aplikasi. Di test, kita bisa uji skenario ini.
                 MessageBox.Show("Sesi tidak ditemukan, aplikasi akan ditutup.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                Application.Current.Shutdown();
+                Application.Current?.Shutdown();
                 return;
             }
 
@@ -68,7 +80,7 @@ namespace ManajemenGudang.ViewModels // <-- Pastikan namespace ini benar
         {
             TambahBarangView tambahView = new TambahBarangView();
             tambahView.ShowDialog();
-            LoadUserItems();
+            LoadUserItems(); // Refresh data setelah window ditutup
         }
     }
 }

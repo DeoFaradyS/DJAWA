@@ -1,26 +1,116 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\",
+  "WorkspaceRootPath": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\manajemengudang\\views\\riwayatbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\riwayatbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\manajemengudang\\views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\manajemengudang\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\admindashboardviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\manajemengudang\\views\\tambahbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\riwayatbarangviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\viewmodels\\riwayatbarangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:viewmodels\\riwayatbarangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\tambahbarangviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\viewmodels\\tambahbarangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:viewmodels\\tambahbarangviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\loginviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\registerviewmodeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A903F946-3D59-4BDB-B039-323880D8A2D6}|..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang.tests\\manajemengudang.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\tambahbarangview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\tambahbarangview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\tambahbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\tambahbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|d:\\akademik-semester-6\\kontruksi perangkat lunak\\manajemengudang\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\riwayatbarangview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\riwayatbarangview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\riwayatbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\riwayatbarangview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\models\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:models\\barang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|c:\\semester 6\\konstruksi perangkat lunak\\pakai ini\\djawa\\manajemengudang\\migrations\\20250620031522_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65E76D1-3A93-4435-8C74-346C17AF76BC}|ManajemenGudang.csproj|solutionrelative:migrations\\20250620031522_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,16 +120,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -54,23 +136,243 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginView.xaml.cs",
-              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBQAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "RiwayatBarangViewModelTests.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\RiwayatBarangViewModelTests.cs",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\RiwayatBarangViewModelTests.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\RiwayatBarangViewModelTests.cs",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\RiwayatBarangViewModelTests.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwGkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T03:07:19.349Z"
+              "WhenOpened": "2025-06-20T07:51:02.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:19:23.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminDashboardViewModel.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv2EAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:53:11.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TambahBarangViewModelTests.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\TambahBarangViewModelTests.cs",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\TambahBarangViewModelTests.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\TambahBarangViewModelTests.cs",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\TambahBarangViewModelTests.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAQwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:48:12.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAuwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:47:55.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboardViewModelTests.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\AdminDashboardViewModelTests.cs",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\AdminDashboardViewModelTests.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\AdminDashboardViewModelTests.cs",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\AdminDashboardViewModelTests.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAADwv20AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:53:34.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TambahBarangViewModel.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\TambahBarangViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\TambahBarangViewModel.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\TambahBarangViewModel.cs",
+              "RelativeToolTip": "ViewModels\\TambahBarangViewModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:46:25.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RiwayatBarangViewModel.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\RiwayatBarangViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RiwayatBarangViewModel.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\ViewModels\\RiwayatBarangViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RiwayatBarangViewModel.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAuwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:46:23.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginViewModelTests.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\LoginViewModelTests.cs",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\LoginViewModelTests.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\LoginViewModelTests.cs",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\LoginViewModelTests.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T07:43:30.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterViewModelTests.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\RegisterViewModelTests.cs",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\RegisterViewModelTests.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\RegisterViewModelTests.cs",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\RegisterViewModelTests.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwGAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:47:36.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:16:07.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManajemenGudang.Tests.csproj",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj",
+              "RelativeToolTip": "..\\ManajemenGudang.Tests\\ManajemenGudang.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-20T05:24:26.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TambahBarangView.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\TambahBarangView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\TambahBarangView.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\TambahBarangView.xaml.cs",
+              "RelativeToolTip": "Views\\TambahBarangView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:28:43.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RiwayatBarangView.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RiwayatBarangView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\RiwayatBarangView.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RiwayatBarangView.xaml.cs",
+              "RelativeToolTip": "Views\\RiwayatBarangView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:27:46.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterView.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RegisterView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\RegisterView.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RegisterView.xaml.cs",
+              "RelativeToolTip": "Views\\RegisterView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:26:48.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginView.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "Views\\LoginView.xaml.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T03:07:19.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TambahBarangView.xaml",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\TambahBarangView.xaml",
+              "RelativeDocumentMoniker": "Views\\TambahBarangView.xaml",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\TambahBarangView.xaml",
+              "RelativeToolTip": "Views\\TambahBarangView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-16T19:32:18.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\LoginView.xaml",
+              "RelativeDocumentMoniker": "Views\\LoginView.xaml",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\LoginView.xaml",
+              "RelativeToolTip": "Views\\LoginView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T03:25:08.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RiwayatBarangView.xaml",
-              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\RiwayatBarangView.xaml",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RiwayatBarangView.xaml",
               "RelativeDocumentMoniker": "Views\\RiwayatBarangView.xaml",
-              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\RiwayatBarangView.xaml",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RiwayatBarangView.xaml",
               "RelativeToolTip": "Views\\RiwayatBarangView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-16T21:20:05.504Z",
@@ -78,36 +380,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminDashboardView.xaml",
-              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\AdminDashboardView.xaml",
-              "RelativeDocumentMoniker": "Views\\AdminDashboardView.xaml",
-              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\AdminDashboardView.xaml",
-              "RelativeToolTip": "Views\\AdminDashboardView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-16T23:59:06.822Z"
+              "DocumentIndex": 20,
+              "Title": "AdminDashboardView.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\AdminDashboardView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AdminDashboardView.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\AdminDashboardView.xaml.cs",
+              "RelativeToolTip": "Views\\AdminDashboardView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:23:50.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TambahBarangView.xaml",
-              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\TambahBarangView.xaml",
-              "RelativeDocumentMoniker": "Views\\TambahBarangView.xaml",
-              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\TambahBarangView.xaml",
-              "RelativeToolTip": "Views\\TambahBarangView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-16T19:32:18.581Z"
+              "DocumentIndex": 22,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:23:08.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "RegisterView.xaml",
-              "DocumentMoniker": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\RegisterView.xaml",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RegisterView.xaml",
               "RelativeDocumentMoniker": "Views\\RegisterView.xaml",
-              "ToolTip": "D:\\Akademik-Semester-6\\Kontruksi Perangkat Lunak\\ManajemenGudang\\Views\\RegisterView.xaml",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\RegisterView.xaml",
               "RelativeToolTip": "Views\\RegisterView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-16T20:04:18.771Z"
+              "WhenOpened": "2025-06-16T20:04:18.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:23:15.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:23:11.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminDashboardView.xaml",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\AdminDashboardView.xaml",
+              "RelativeDocumentMoniker": "Views\\AdminDashboardView.xaml",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Views\\AdminDashboardView.xaml",
+              "RelativeToolTip": "Views\\AdminDashboardView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-16T23:59:06.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Services\\AuthenticationService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:17:53.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:17:16.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Barang.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Models\\Barang.cs",
+              "RelativeDocumentMoniker": "Models\\Barang.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Models\\Barang.cs",
+              "RelativeToolTip": "Models\\Barang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:16:50.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250620031522_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Migrations\\20250620031522_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250620031522_InitialCreate.cs",
+              "ToolTip": "C:\\Semester 6\\Konstruksi Perangkat Lunak\\Pakai ini\\DJAWA\\ManajemenGudang\\Migrations\\20250620031522_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250620031522_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:15:22.895Z",
+              "EditorCaption": ""
             }
           ]
         }

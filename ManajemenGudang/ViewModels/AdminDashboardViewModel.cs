@@ -1,4 +1,7 @@
-﻿using ManajemenGudang.Data;
+﻿// File: ViewModels/AdminDashboardViewModel.cs
+// (MODIFIED FOR TESTABILITY)
+
+using ManajemenGudang.Data;
 using ManajemenGudang.Models;
 using System;
 using System.Collections.Generic;
@@ -13,13 +16,13 @@ namespace ManajemenGudang.ViewModels
 {
     public class AdminDashboardViewModel : ViewModelBase
     {
-        private readonly AppDbContext _context = new();
+        private readonly AppDbContext _context; // Dihapus ' = new()'
         private User? _selectedUser;
         private Barang? _selectedBarang;
 
         public ObservableCollection<User> AllUsers { get; set; }
         public ObservableCollection<Barang> SelectedUserItems { get; set; }
-        public List<string> AvailableStatuses { get; } = new List<string> { "Barang Tersimpan", "Barang Keluar" };
+        public List<string> AvailableStatuses { get; } = new List<string> { "Barang Tersimpan", "Barang Keluar", "Belum Disetujui" };
         public string? SelectedStatus { get; set; }
 
         public User? SelectedUser
@@ -41,9 +44,17 @@ namespace ManajemenGudang.ViewModels
 
         public ICommand UpdateStatusCommand { get; }
 
-        public AdminDashboardViewModel()
+        // Constructor default untuk WPF
+        public AdminDashboardViewModel() : this(new AppDbContext())
         {
-            // Muat semua user KECUALI admin dummy
+        }
+
+        // Constructor untuk DI dan Unit Testing
+        public AdminDashboardViewModel(AppDbContext context)
+        {
+            _context = context;
+
+            // Muat semua user
             AllUsers = new ObservableCollection<User>(_context.Users.ToList());
             SelectedUserItems = new ObservableCollection<Barang>();
             UpdateStatusCommand = new RelayCommand(UpdateStatus, CanUpdateStatus);
@@ -81,7 +92,6 @@ namespace ManajemenGudang.ViewModels
 
         private bool CanUpdateStatus(object? parameter)
         {
-            // Tombol "Ubah Status" hanya aktif jika ada barang yang dipilih
             return SelectedBarang != null;
         }
     }

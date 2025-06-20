@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\ManajemenGudang\obj\Debug\net8.0-windows\
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang\obj\Debug\net8.0-windows\
 ManajemenGudang
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Akademik-Semester-6\Kontruksi Perangkat Lunak\ManajemenGudang\App.xaml
-5-1249211535
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang\App.xaml
+6157833806
 
-29-2137764613
-217-884050772
-Views\AdminDashboardView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\RiwayatBarangView.xaml;Views\TambahBarangView.xaml;
+26-96368608
+217-1843091305
+MainWindow.xaml;Views\AdminDashboardView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\RiwayatBarangView.xaml;Views\TambahBarangView.xaml;
 
 True
 
