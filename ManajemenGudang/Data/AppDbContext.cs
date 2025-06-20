@@ -1,5 +1,5 @@
 ﻿// File: Data/AppDbContext.cs
-// (MODIFIED FOR TESTABILITY)
+// (Versi Final yang Disederhanakan)
 
 using ManajemenGudang.Models;
 using Microsoft.EntityFrameworkCore;
@@ -13,23 +13,23 @@ namespace ManajemenGudang.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Barang> Barangs { get; set; }
 
-        // Constructor ini ditambahkan untuk unit testing
+        // Constructor untuk Unit Test (dan sekarang juga untuk Performance Test)
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
 
-        // Constructor lama tetap ada untuk aplikasi utama
+        // Constructor untuk aplikasi utama WPF
         public AppDbContext()
         {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Hanya konfigurasi jika belum dikonfigurasi dari luar (oleh unit test)
+            // Hanya konfigurasi jika belum dikonfigurasi dari luar (lewat constructor)
             if (!optionsBuilder.IsConfigured)
             {
-                string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)!;
-                optionsBuilder.UseSqlite($"Data Source={System.IO.Path.Combine(path, "gudang.db")}");
+                string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!;
+                optionsBuilder.UseSqlite($"Data Source={Path.Combine(path, "gudang.db")}");
             }
         }
     }

@@ -1,0 +1,1948 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 25 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1/" /p:OutDir="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0/" /p:OutputPath="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0/" /p:PublishDir="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\publish/" in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1
+// command took 3.1 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:ArtifactsPath="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1/" /p:OutDir="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0/" /p:OutputPath="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0/" /p:PublishDir="C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\publish/" --output "C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0/" in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1
+// command took 12.24 sec and exited with 0
+// ***** Done, took 00:00:15 (15.47 sec)   *****
+// Found 6 benchmarks:
+//   AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=10]
+//   AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=10]
+//   AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=10]
+//   AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=100]
+//   AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=100]
+//   AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=100]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1652 1656 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.LoadAllUsers_Constructor(UserCount: 10)" --job Default --benchmarkId 0 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_0.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 176
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 78060 has exited with code -1.
+
+// ** Remained 24 (96.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1652 1656 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.LoadSelectedUserItems(UserCount: 10)" --job Default --benchmarkId 1 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 368
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 78412 has exited with code -1.
+
+// ** Remained 23 (92.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1764 1760 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.UpdateItemStatus(UserCount: 10)" --job Default --benchmarkId 2 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 560
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 78536 has exited with code -1.
+
+// ** Remained 22 (88.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1800 1796 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.LoadAllUsers_Constructor(UserCount: 100)" --job Default --benchmarkId 3 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_3.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 752
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 78604 has exited with code -1.
+
+// ** Remained 21 (84.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1820 1804 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.LoadSelectedUserItems(UserCount: 100)" --job Default --benchmarkId 4 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_4.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 944
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 77900 has exited with code -1.
+
+// ** Remained 20 (80.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1544 1792 --benchmarkName "ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.UpdateItemStatus(UserCount: 100)" --job Default --benchmarkId 5 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks.GlobalSetup() in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\AdminDashboardViewModelBenchmarks.cs:line 58
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_5.Run(IHost host, String benchmarkName) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 1136
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\ManajemenGudang.PerformanceTests-1.notcs:line 57
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 78800 has exited with code -1.
+
+// ** Remained 19 (76.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:27 (0h 0m from now) **
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.AdminDashboardViewModelBenchmarks-report.html
+
+// * Detailed results *
+AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=100]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=100]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=100]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.15.2, Windows 11 (10.0.22631.5472/23H2/2023Update/SunValley3)
+AMD Ryzen 5 5600H with Radeon Graphics 3.30GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 9.0.200
+  [Host]     : .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+
+
+| Method                         | UserCount | Mean | Error |
+|------------------------------- |---------- |-----:|------:|
+| 'Load All Users (Constructor)' | 10        |   NA |    NA |
+| 'Select User to Load Items'    | 10        |   NA |    NA |
+| 'Update Item Status'           | 10        |   NA |    NA |
+| 'Load All Users (Constructor)' | 100       |   NA |    NA |
+| 'Select User to Load Items'    | 100       |   NA |    NA |
+| 'Update Item Status'           | 100       |   NA |    NA |
+
+Benchmarks with issues:
+  AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=10]
+  AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=10]
+  AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=10]
+  AdminDashboardViewModelBenchmarks.'Load All Users (Constructor)': DefaultJob [UserCount=100]
+  AdminDashboardViewModelBenchmarks.'Select User to Load Items': DefaultJob [UserCount=100]
+  AdminDashboardViewModelBenchmarks.'Update Item Status': DefaultJob [UserCount=100]
+
+// * Warnings *
+Environment
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Windows Defender (windowsdefender://)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+
+// * Legends *
+  UserCount : Value of the 'UserCount' parameter
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  1 ns      : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:06 (6.64 sec), executed benchmarks: 6
+
+// Found 9 benchmarks:
+//   LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=5]
+//   LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=5]
+//   LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=5]
+//   LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=10]
+//   LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=10]
+//   LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=10]
+//   LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=15]
+//   LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=15]
+//   LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=15]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1628 1560 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsAdmin(UserCount: 5)" --job Default --benchmarkId 6 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 105400.00 ns, 105.4000 us/op
+WorkloadJitting  1: 1 op, 9040400.00 ns, 9.0404 ms/op
+
+OverheadJitting  2: 16 op, 170600.00 ns, 10.6625 us/op
+WorkloadJitting  2: 16 op, 149600.00 ns, 9.3500 us/op
+
+WorkloadPilot    1: 16 op, 4700.00 ns, 293.7500 ns/op
+WorkloadPilot    2: 32 op, 3300.00 ns, 103.1250 ns/op
+WorkloadPilot    3: 64 op, 5200.00 ns, 81.2500 ns/op
+WorkloadPilot    4: 128 op, 13900.00 ns, 108.5938 ns/op
+WorkloadPilot    5: 256 op, 14900.00 ns, 58.2031 ns/op
+WorkloadPilot    6: 512 op, 27100.00 ns, 52.9297 ns/op
+WorkloadPilot    7: 1024 op, 40400.00 ns, 39.4531 ns/op
+WorkloadPilot    8: 2048 op, 75500.00 ns, 36.8652 ns/op
+WorkloadPilot    9: 4096 op, 158600.00 ns, 38.7207 ns/op
+WorkloadPilot   10: 8192 op, 331900.00 ns, 40.5151 ns/op
+WorkloadPilot   11: 16384 op, 516900.00 ns, 31.5491 ns/op
+WorkloadPilot   12: 32768 op, 1105300.00 ns, 33.7311 ns/op
+WorkloadPilot   13: 65536 op, 2339700.00 ns, 35.7010 ns/op
+WorkloadPilot   14: 131072 op, 4853300.00 ns, 37.0277 ns/op
+WorkloadPilot   15: 262144 op, 10885300.00 ns, 41.5241 ns/op
+WorkloadPilot   16: 524288 op, 18538400.00 ns, 35.3592 ns/op
+WorkloadPilot   17: 1048576 op, 44408500.00 ns, 42.3512 ns/op
+WorkloadPilot   18: 2097152 op, 44833400.00 ns, 21.3782 ns/op
+WorkloadPilot   19: 4194304 op, 63418300.00 ns, 15.1201 ns/op
+WorkloadPilot   20: 8388608 op, 109231400.00 ns, 13.0214 ns/op
+WorkloadPilot   21: 16777216 op, 228805500.00 ns, 13.6379 ns/op
+WorkloadPilot   22: 33554432 op, 505306500.00 ns, 15.0593 ns/op
+
+OverheadWarmup   1: 33554432 op, 70753300.00 ns, 2.1086 ns/op
+OverheadWarmup   2: 33554432 op, 70349400.00 ns, 2.0966 ns/op
+OverheadWarmup   3: 33554432 op, 71779000.00 ns, 2.1392 ns/op
+OverheadWarmup   4: 33554432 op, 49543100.00 ns, 1.4765 ns/op
+OverheadWarmup   5: 33554432 op, 47350200.00 ns, 1.4111 ns/op
+OverheadWarmup   6: 33554432 op, 47547800.00 ns, 1.4170 ns/op
+OverheadWarmup   7: 33554432 op, 47399300.00 ns, 1.4126 ns/op
+
+OverheadActual   1: 33554432 op, 47056800.00 ns, 1.4024 ns/op
+OverheadActual   2: 33554432 op, 50297700.00 ns, 1.4990 ns/op
+OverheadActual   3: 33554432 op, 56344000.00 ns, 1.6792 ns/op
+OverheadActual   4: 33554432 op, 47585600.00 ns, 1.4182 ns/op
+OverheadActual   5: 33554432 op, 55102700.00 ns, 1.6422 ns/op
+OverheadActual   6: 33554432 op, 48849800.00 ns, 1.4558 ns/op
+OverheadActual   7: 33554432 op, 50222800.00 ns, 1.4968 ns/op
+OverheadActual   8: 33554432 op, 50485600.00 ns, 1.5046 ns/op
+OverheadActual   9: 33554432 op, 48603900.00 ns, 1.4485 ns/op
+OverheadActual  10: 33554432 op, 50358700.00 ns, 1.5008 ns/op
+OverheadActual  11: 33554432 op, 57007000.00 ns, 1.6989 ns/op
+OverheadActual  12: 33554432 op, 47535200.00 ns, 1.4167 ns/op
+OverheadActual  13: 33554432 op, 55437500.00 ns, 1.6522 ns/op
+OverheadActual  14: 33554432 op, 58921400.00 ns, 1.7560 ns/op
+OverheadActual  15: 33554432 op, 46565900.00 ns, 1.3878 ns/op
+OverheadActual  16: 33554432 op, 46768100.00 ns, 1.3938 ns/op
+OverheadActual  17: 33554432 op, 51711400.00 ns, 1.5411 ns/op
+OverheadActual  18: 33554432 op, 46061900.00 ns, 1.3728 ns/op
+OverheadActual  19: 33554432 op, 46582500.00 ns, 1.3883 ns/op
+OverheadActual  20: 33554432 op, 46378800.00 ns, 1.3822 ns/op
+
+OverheadWarmup   1: 33554432 op, 50846100.00 ns, 1.5153 ns/op
+OverheadWarmup   2: 33554432 op, 46068000.00 ns, 1.3729 ns/op
+OverheadWarmup   3: 33554432 op, 46321300.00 ns, 1.3805 ns/op
+OverheadWarmup   4: 33554432 op, 46573100.00 ns, 1.3880 ns/op
+OverheadWarmup   5: 33554432 op, 49556400.00 ns, 1.4769 ns/op
+OverheadWarmup   6: 33554432 op, 47272400.00 ns, 1.4088 ns/op
+OverheadWarmup   7: 33554432 op, 46783600.00 ns, 1.3943 ns/op
+OverheadWarmup   8: 33554432 op, 51426200.00 ns, 1.5326 ns/op
+OverheadWarmup   9: 33554432 op, 47733000.00 ns, 1.4226 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 33554432 op, 451378100.00 ns, 13.4521 ns/op
+WorkloadActual   2: 33554432 op, 482795200.00 ns, 14.3884 ns/op
+WorkloadActual   3: 33554432 op, 499973100.00 ns, 14.9004 ns/op
+WorkloadActual   4: 33554432 op, 481438400.00 ns, 14.3480 ns/op
+WorkloadActual   5: 33554432 op, 521699100.00 ns, 15.5478 ns/op
+WorkloadActual   6: 33554432 op, 537535700.00 ns, 16.0198 ns/op
+WorkloadActual   7: 33554432 op, 475720800.00 ns, 14.1776 ns/op
+WorkloadActual   8: 33554432 op, 468004100.00 ns, 13.9476 ns/op
+WorkloadActual   9: 33554432 op, 455737100.00 ns, 13.5820 ns/op
+WorkloadActual  10: 33554432 op, 463159200.00 ns, 13.8032 ns/op
+WorkloadActual  11: 33554432 op, 506640100.00 ns, 15.0991 ns/op
+WorkloadActual  12: 33554432 op, 515779400.00 ns, 15.3714 ns/op
+WorkloadActual  13: 33554432 op, 547369800.00 ns, 16.3129 ns/op
+WorkloadActual  14: 33554432 op, 486657900.00 ns, 14.5035 ns/op
+WorkloadActual  15: 33554432 op, 509217400.00 ns, 15.1759 ns/op
+WorkloadActual  16: 33554432 op, 486125300.00 ns, 14.4877 ns/op
+WorkloadActual  17: 33554432 op, 491942700.00 ns, 14.6610 ns/op
+WorkloadActual  18: 33554432 op, 506765400.00 ns, 15.1028 ns/op
+WorkloadActual  19: 33554432 op, 478474000.00 ns, 14.2596 ns/op
+WorkloadActual  20: 33554432 op, 472868600.00 ns, 14.0926 ns/op
+WorkloadActual  21: 33554432 op, 484842000.00 ns, 14.4494 ns/op
+WorkloadActual  22: 33554432 op, 489837000.00 ns, 14.5983 ns/op
+WorkloadActual  23: 33554432 op, 479749000.00 ns, 14.2976 ns/op
+WorkloadActual  24: 33554432 op, 520516400.00 ns, 15.5126 ns/op
+WorkloadActual  25: 33554432 op, 493447100.00 ns, 14.7059 ns/op
+WorkloadActual  26: 33554432 op, 479229600.00 ns, 14.2822 ns/op
+WorkloadActual  27: 33554432 op, 472402600.00 ns, 14.0787 ns/op
+WorkloadActual  28: 33554432 op, 492485200.00 ns, 14.6772 ns/op
+WorkloadActual  29: 33554432 op, 490563400.00 ns, 14.6199 ns/op
+WorkloadActual  30: 33554432 op, 489640600.00 ns, 14.5924 ns/op
+WorkloadActual  31: 33554432 op, 481939800.00 ns, 14.3629 ns/op
+WorkloadActual  32: 33554432 op, 465203500.00 ns, 13.8641 ns/op
+WorkloadActual  33: 33554432 op, 456263900.00 ns, 13.5977 ns/op
+WorkloadActual  34: 33554432 op, 485139400.00 ns, 14.4583 ns/op
+WorkloadActual  35: 33554432 op, 469108500.00 ns, 13.9805 ns/op
+WorkloadActual  36: 33554432 op, 469808600.00 ns, 14.0014 ns/op
+WorkloadActual  37: 33554432 op, 477930100.00 ns, 14.2434 ns/op
+WorkloadActual  38: 33554432 op, 472160200.00 ns, 14.0715 ns/op
+WorkloadActual  39: 33554432 op, 496654300.00 ns, 14.8015 ns/op
+WorkloadActual  40: 33554432 op, 445273900.00 ns, 13.2702 ns/op
+WorkloadActual  41: 33554432 op, 451626200.00 ns, 13.4595 ns/op
+WorkloadActual  42: 33554432 op, 442347600.00 ns, 13.1830 ns/op
+WorkloadActual  43: 33554432 op, 435342600.00 ns, 12.9742 ns/op
+WorkloadActual  44: 33554432 op, 455071300.00 ns, 13.5622 ns/op
+WorkloadActual  45: 33554432 op, 553001900.00 ns, 16.4807 ns/op
+WorkloadActual  46: 33554432 op, 512729600.00 ns, 15.2805 ns/op
+WorkloadActual  47: 33554432 op, 505097000.00 ns, 15.0531 ns/op
+WorkloadActual  48: 33554432 op, 469502400.00 ns, 13.9923 ns/op
+WorkloadActual  49: 33554432 op, 450973100.00 ns, 13.4400 ns/op
+WorkloadActual  50: 33554432 op, 468155300.00 ns, 13.9521 ns/op
+WorkloadActual  51: 33554432 op, 445084500.00 ns, 13.2646 ns/op
+WorkloadActual  52: 33554432 op, 461820800.00 ns, 13.7633 ns/op
+WorkloadActual  53: 33554432 op, 447856200.00 ns, 13.3472 ns/op
+WorkloadActual  54: 33554432 op, 461081900.00 ns, 13.7413 ns/op
+WorkloadActual  55: 33554432 op, 433661000.00 ns, 12.9241 ns/op
+WorkloadActual  56: 33554432 op, 439718300.00 ns, 13.1046 ns/op
+WorkloadActual  57: 33554432 op, 434622100.00 ns, 12.9527 ns/op
+WorkloadActual  58: 33554432 op, 438970200.00 ns, 13.0823 ns/op
+WorkloadActual  59: 33554432 op, 438827700.00 ns, 13.0781 ns/op
+WorkloadActual  60: 33554432 op, 450670800.00 ns, 13.4310 ns/op
+WorkloadActual  61: 33554432 op, 455860200.00 ns, 13.5857 ns/op
+WorkloadActual  62: 33554432 op, 429555800.00 ns, 12.8018 ns/op
+WorkloadActual  63: 33554432 op, 450588600.00 ns, 13.4286 ns/op
+WorkloadActual  64: 33554432 op, 438203000.00 ns, 13.0595 ns/op
+WorkloadActual  65: 33554432 op, 455756800.00 ns, 13.5826 ns/op
+WorkloadActual  66: 33554432 op, 444394600.00 ns, 13.2440 ns/op
+WorkloadActual  67: 33554432 op, 443256600.00 ns, 13.2101 ns/op
+WorkloadActual  68: 33554432 op, 466071900.00 ns, 13.8900 ns/op
+WorkloadActual  69: 33554432 op, 460618100.00 ns, 13.7275 ns/op
+WorkloadActual  70: 33554432 op, 464578700.00 ns, 13.8455 ns/op
+WorkloadActual  71: 33554432 op, 447757300.00 ns, 13.3442 ns/op
+WorkloadActual  72: 33554432 op, 689780500.00 ns, 20.5571 ns/op
+WorkloadActual  73: 33554432 op, 436812200.00 ns, 13.0180 ns/op
+WorkloadActual  74: 33554432 op, 435639200.00 ns, 12.9831 ns/op
+WorkloadActual  75: 33554432 op, 460075400.00 ns, 13.7113 ns/op
+WorkloadActual  76: 33554432 op, 434665500.00 ns, 12.9540 ns/op
+WorkloadActual  77: 33554432 op, 441820500.00 ns, 13.1673 ns/op
+WorkloadActual  78: 33554432 op, 432418800.00 ns, 12.8871 ns/op
+WorkloadActual  79: 33554432 op, 429608300.00 ns, 12.8033 ns/op
+WorkloadActual  80: 33554432 op, 426366400.00 ns, 12.7067 ns/op
+WorkloadActual  81: 33554432 op, 430811700.00 ns, 12.8392 ns/op
+WorkloadActual  82: 33554432 op, 434582200.00 ns, 12.9516 ns/op
+WorkloadActual  83: 33554432 op, 456083500.00 ns, 13.5923 ns/op
+WorkloadActual  84: 33554432 op, 448259100.00 ns, 13.3592 ns/op
+WorkloadActual  85: 33554432 op, 454176700.00 ns, 13.5355 ns/op
+WorkloadActual  86: 33554432 op, 456058500.00 ns, 13.5916 ns/op
+WorkloadActual  87: 33554432 op, 441740800.00 ns, 13.1649 ns/op
+WorkloadActual  88: 33554432 op, 486667700.00 ns, 14.5038 ns/op
+WorkloadActual  89: 33554432 op, 445276100.00 ns, 13.2703 ns/op
+WorkloadActual  90: 33554432 op, 447685900.00 ns, 13.3421 ns/op
+WorkloadActual  91: 33554432 op, 454150800.00 ns, 13.5347 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 33554432 op, 401841800.00 ns, 11.9758 ns/op
+WorkloadResult   2: 33554432 op, 433258900.00 ns, 12.9121 ns/op
+WorkloadResult   3: 33554432 op, 450436800.00 ns, 13.4241 ns/op
+WorkloadResult   4: 33554432 op, 431902100.00 ns, 12.8717 ns/op
+WorkloadResult   5: 33554432 op, 472162800.00 ns, 14.0715 ns/op
+WorkloadResult   6: 33554432 op, 487999400.00 ns, 14.5435 ns/op
+WorkloadResult   7: 33554432 op, 426184500.00 ns, 12.7013 ns/op
+WorkloadResult   8: 33554432 op, 418467800.00 ns, 12.4713 ns/op
+WorkloadResult   9: 33554432 op, 406200800.00 ns, 12.1057 ns/op
+WorkloadResult  10: 33554432 op, 413622900.00 ns, 12.3269 ns/op
+WorkloadResult  11: 33554432 op, 457103800.00 ns, 13.6228 ns/op
+WorkloadResult  12: 33554432 op, 466243100.00 ns, 13.8951 ns/op
+WorkloadResult  13: 33554432 op, 437121600.00 ns, 13.0272 ns/op
+WorkloadResult  14: 33554432 op, 459681100.00 ns, 13.6996 ns/op
+WorkloadResult  15: 33554432 op, 436589000.00 ns, 13.0114 ns/op
+WorkloadResult  16: 33554432 op, 442406400.00 ns, 13.1847 ns/op
+WorkloadResult  17: 33554432 op, 457229100.00 ns, 13.6265 ns/op
+WorkloadResult  18: 33554432 op, 428937700.00 ns, 12.7833 ns/op
+WorkloadResult  19: 33554432 op, 423332300.00 ns, 12.6163 ns/op
+WorkloadResult  20: 33554432 op, 435305700.00 ns, 12.9731 ns/op
+WorkloadResult  21: 33554432 op, 440300700.00 ns, 13.1220 ns/op
+WorkloadResult  22: 33554432 op, 430212700.00 ns, 12.8213 ns/op
+WorkloadResult  23: 33554432 op, 470980100.00 ns, 14.0363 ns/op
+WorkloadResult  24: 33554432 op, 443910800.00 ns, 13.2296 ns/op
+WorkloadResult  25: 33554432 op, 429693300.00 ns, 12.8059 ns/op
+WorkloadResult  26: 33554432 op, 422866300.00 ns, 12.6024 ns/op
+WorkloadResult  27: 33554432 op, 442948900.00 ns, 13.2009 ns/op
+WorkloadResult  28: 33554432 op, 441027100.00 ns, 13.1436 ns/op
+WorkloadResult  29: 33554432 op, 440104300.00 ns, 13.1161 ns/op
+WorkloadResult  30: 33554432 op, 432403500.00 ns, 12.8866 ns/op
+WorkloadResult  31: 33554432 op, 415667200.00 ns, 12.3878 ns/op
+WorkloadResult  32: 33554432 op, 406727600.00 ns, 12.1214 ns/op
+WorkloadResult  33: 33554432 op, 435603100.00 ns, 12.9820 ns/op
+WorkloadResult  34: 33554432 op, 419572200.00 ns, 12.5042 ns/op
+WorkloadResult  35: 33554432 op, 420272300.00 ns, 12.5251 ns/op
+WorkloadResult  36: 33554432 op, 428393800.00 ns, 12.7671 ns/op
+WorkloadResult  37: 33554432 op, 422623900.00 ns, 12.5952 ns/op
+WorkloadResult  38: 33554432 op, 447118000.00 ns, 13.3252 ns/op
+WorkloadResult  39: 33554432 op, 395737600.00 ns, 11.7939 ns/op
+WorkloadResult  40: 33554432 op, 402089900.00 ns, 11.9832 ns/op
+WorkloadResult  41: 33554432 op, 392811300.00 ns, 11.7067 ns/op
+WorkloadResult  42: 33554432 op, 385806300.00 ns, 11.4979 ns/op
+WorkloadResult  43: 33554432 op, 405535000.00 ns, 12.0859 ns/op
+WorkloadResult  44: 33554432 op, 463193300.00 ns, 13.8042 ns/op
+WorkloadResult  45: 33554432 op, 455560700.00 ns, 13.5768 ns/op
+WorkloadResult  46: 33554432 op, 419966100.00 ns, 12.5160 ns/op
+WorkloadResult  47: 33554432 op, 401436800.00 ns, 11.9637 ns/op
+WorkloadResult  48: 33554432 op, 418619000.00 ns, 12.4758 ns/op
+WorkloadResult  49: 33554432 op, 395548200.00 ns, 11.7883 ns/op
+WorkloadResult  50: 33554432 op, 412284500.00 ns, 12.2870 ns/op
+WorkloadResult  51: 33554432 op, 398319900.00 ns, 11.8709 ns/op
+WorkloadResult  52: 33554432 op, 411545600.00 ns, 12.2650 ns/op
+WorkloadResult  53: 33554432 op, 384124700.00 ns, 11.4478 ns/op
+WorkloadResult  54: 33554432 op, 390182000.00 ns, 11.6283 ns/op
+WorkloadResult  55: 33554432 op, 385085800.00 ns, 11.4765 ns/op
+WorkloadResult  56: 33554432 op, 389433900.00 ns, 11.6060 ns/op
+WorkloadResult  57: 33554432 op, 389291400.00 ns, 11.6018 ns/op
+WorkloadResult  58: 33554432 op, 401134500.00 ns, 11.9547 ns/op
+WorkloadResult  59: 33554432 op, 406323900.00 ns, 12.1094 ns/op
+WorkloadResult  60: 33554432 op, 380019500.00 ns, 11.3255 ns/op
+WorkloadResult  61: 33554432 op, 401052300.00 ns, 11.9523 ns/op
+WorkloadResult  62: 33554432 op, 388666700.00 ns, 11.5832 ns/op
+WorkloadResult  63: 33554432 op, 406220500.00 ns, 12.1063 ns/op
+WorkloadResult  64: 33554432 op, 394858300.00 ns, 11.7677 ns/op
+WorkloadResult  65: 33554432 op, 393720300.00 ns, 11.7338 ns/op
+WorkloadResult  66: 33554432 op, 416535600.00 ns, 12.4137 ns/op
+WorkloadResult  67: 33554432 op, 411081800.00 ns, 12.2512 ns/op
+WorkloadResult  68: 33554432 op, 415042400.00 ns, 12.3692 ns/op
+WorkloadResult  69: 33554432 op, 398221000.00 ns, 11.8679 ns/op
+WorkloadResult  70: 33554432 op, 387275900.00 ns, 11.5417 ns/op
+WorkloadResult  71: 33554432 op, 386102900.00 ns, 11.5068 ns/op
+WorkloadResult  72: 33554432 op, 410539100.00 ns, 12.2350 ns/op
+WorkloadResult  73: 33554432 op, 385129200.00 ns, 11.4777 ns/op
+WorkloadResult  74: 33554432 op, 392284200.00 ns, 11.6910 ns/op
+WorkloadResult  75: 33554432 op, 382882500.00 ns, 11.4108 ns/op
+WorkloadResult  76: 33554432 op, 380072000.00 ns, 11.3270 ns/op
+WorkloadResult  77: 33554432 op, 376830100.00 ns, 11.2304 ns/op
+WorkloadResult  78: 33554432 op, 381275400.00 ns, 11.3629 ns/op
+WorkloadResult  79: 33554432 op, 385045900.00 ns, 11.4753 ns/op
+WorkloadResult  80: 33554432 op, 406547200.00 ns, 12.1161 ns/op
+WorkloadResult  81: 33554432 op, 398722800.00 ns, 11.8829 ns/op
+WorkloadResult  82: 33554432 op, 404640400.00 ns, 12.0592 ns/op
+WorkloadResult  83: 33554432 op, 406522200.00 ns, 12.1153 ns/op
+WorkloadResult  84: 33554432 op, 392204500.00 ns, 11.6886 ns/op
+WorkloadResult  85: 33554432 op, 437131400.00 ns, 13.0275 ns/op
+WorkloadResult  86: 33554432 op, 395739800.00 ns, 11.7940 ns/op
+WorkloadResult  87: 33554432 op, 398149600.00 ns, 11.8658 ns/op
+WorkloadResult  88: 33554432 op, 404614500.00 ns, 12.0585 ns/op
+// GC:  128 0 0 1073741824 33554432
+// Threading:  0 0 33554432
+
+// AfterAll
+// Benchmark Process 76900 has exited with code 0.
+
+Mean = 12.394 ns, StdErr = 0.081 ns (0.65%), N = 88, StdDev = 0.756 ns
+Min = 11.230 ns, Q1 = 11.792 ns, Median = 12.258 ns, Q3 = 12.927 ns, Max = 14.544 ns
+IQR = 1.135 ns, LowerFence = 10.090 ns, UpperFence = 14.630 ns
+ConfidenceInterval = [12.120 ns; 12.669 ns] (CI 99.9%), Margin = 0.274 ns (2.21% of Mean)
+Skewness = 0.6, Kurtosis = 2.6, MValue = 2.38
+
+// ** Remained 18 (72.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:30 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1780 1772 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsExistingUser(UserCount: 5)" --job Default --benchmarkId 7 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 108900.00 ns, 108.9000 us/op
+WorkloadJitting  1: 1 op, 165060200.00 ns, 165.0602 ms/op
+
+WorkloadPilot    1: 2 op, 2507600.00 ns, 1.2538 ms/op
+WorkloadPilot    2: 3 op, 840700.00 ns, 280.2333 us/op
+WorkloadPilot    3: 4 op, 687300.00 ns, 171.8250 us/op
+WorkloadPilot    4: 5 op, 1027100.00 ns, 205.4200 us/op
+WorkloadPilot    5: 6 op, 928300.00 ns, 154.7167 us/op
+WorkloadPilot    6: 7 op, 1114800.00 ns, 159.2571 us/op
+WorkloadPilot    7: 8 op, 1387500.00 ns, 173.4375 us/op
+WorkloadPilot    8: 9 op, 1644800.00 ns, 182.7556 us/op
+WorkloadPilot    9: 10 op, 1441500.00 ns, 144.1500 us/op
+WorkloadPilot   10: 11 op, 2064900.00 ns, 187.7182 us/op
+WorkloadPilot   11: 12 op, 1871400.00 ns, 155.9500 us/op
+WorkloadPilot   12: 13 op, 1960700.00 ns, 150.8231 us/op
+WorkloadPilot   13: 14 op, 2299600.00 ns, 164.2571 us/op
+WorkloadPilot   14: 15 op, 2227400.00 ns, 148.4933 us/op
+WorkloadPilot   15: 16 op, 2467700.00 ns, 154.2313 us/op
+WorkloadPilot   16: 32 op, 4862900.00 ns, 151.9656 us/op
+WorkloadPilot   17: 64 op, 9341000.00 ns, 145.9531 us/op
+WorkloadPilot   18: 128 op, 18416900.00 ns, 143.8820 us/op
+WorkloadPilot   19: 256 op, 36523900.00 ns, 142.6715 us/op
+WorkloadPilot   20: 512 op, 90509100.00 ns, 176.7756 us/op
+WorkloadPilot   21: 1024 op, 167154700.00 ns, 163.2370 us/op
+WorkloadPilot   22: 2048 op, 327740200.00 ns, 160.0294 us/op
+WorkloadPilot   23: 4096 op, 649258700.00 ns, 158.5104 us/op
+
+OverheadWarmup   1: 4096 op, 13200.00 ns, 3.2227 ns/op
+OverheadWarmup   2: 4096 op, 8300.00 ns, 2.0264 ns/op
+OverheadWarmup   3: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   4: 4096 op, 7800.00 ns, 1.9043 ns/op
+OverheadWarmup   5: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   6: 4096 op, 8400.00 ns, 2.0508 ns/op
+OverheadWarmup   7: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   8: 4096 op, 11500.00 ns, 2.8076 ns/op
+OverheadWarmup   9: 4096 op, 13400.00 ns, 3.2715 ns/op
+OverheadWarmup  10: 4096 op, 11300.00 ns, 2.7588 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 606918300.00 ns, 148.1734 us/op
+WorkloadActual   2: 4096 op, 483873400.00 ns, 118.1332 us/op
+WorkloadActual   3: 4096 op, 301065200.00 ns, 73.5022 us/op
+WorkloadActual   4: 4096 op, 246771200.00 ns, 60.2469 us/op
+WorkloadActual   5: 4096 op, 240461400.00 ns, 58.7064 us/op
+WorkloadActual   6: 4096 op, 239136800.00 ns, 58.3830 us/op
+WorkloadActual   7: 4096 op, 240050200.00 ns, 58.6060 us/op
+WorkloadActual   8: 4096 op, 238907400.00 ns, 58.3270 us/op
+WorkloadActual   9: 4096 op, 239141100.00 ns, 58.3841 us/op
+WorkloadActual  10: 4096 op, 249013700.00 ns, 60.7944 us/op
+WorkloadActual  11: 4096 op, 251675500.00 ns, 61.4442 us/op
+WorkloadActual  12: 4096 op, 240767000.00 ns, 58.7810 us/op
+WorkloadActual  13: 4096 op, 242165000.00 ns, 59.1223 us/op
+WorkloadActual  14: 4096 op, 242314400.00 ns, 59.1588 us/op
+WorkloadActual  15: 4096 op, 245685300.00 ns, 59.9818 us/op
+WorkloadActual  16: 4096 op, 241407500.00 ns, 58.9374 us/op
+WorkloadActual  17: 4096 op, 241654600.00 ns, 58.9977 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 246771200.00 ns, 60.2469 us/op
+WorkloadResult   2: 4096 op, 240461400.00 ns, 58.7064 us/op
+WorkloadResult   3: 4096 op, 239136800.00 ns, 58.3830 us/op
+WorkloadResult   4: 4096 op, 240050200.00 ns, 58.6060 us/op
+WorkloadResult   5: 4096 op, 238907400.00 ns, 58.3270 us/op
+WorkloadResult   6: 4096 op, 239141100.00 ns, 58.3841 us/op
+WorkloadResult   7: 4096 op, 249013700.00 ns, 60.7944 us/op
+WorkloadResult   8: 4096 op, 251675500.00 ns, 61.4442 us/op
+WorkloadResult   9: 4096 op, 240767000.00 ns, 58.7810 us/op
+WorkloadResult  10: 4096 op, 242165000.00 ns, 59.1223 us/op
+WorkloadResult  11: 4096 op, 242314400.00 ns, 59.1588 us/op
+WorkloadResult  12: 4096 op, 245685300.00 ns, 59.9818 us/op
+WorkloadResult  13: 4096 op, 241407500.00 ns, 58.9374 us/op
+WorkloadResult  14: 4096 op, 241654600.00 ns, 58.9977 us/op
+// GC:  5 1 0 49382792 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 78120 has exited with code 0.
+
+Mean = 59.276 μs, StdErr = 0.259 μs (0.44%), N = 14, StdDev = 0.968 μs
+Min = 58.327 μs, Q1 = 58.631 μs, Median = 58.968 μs, Q3 = 59.776 μs, Max = 61.444 μs
+IQR = 1.145 μs, LowerFence = 56.914 μs, UpperFence = 61.493 μs
+ConfidenceInterval = [58.184 μs; 60.369 μs] (CI 99.9%), Margin = 1.092 μs (1.84% of Mean)
+Skewness = 0.94, Kurtosis = 2.52, MValue = 2
+
+// ** Remained 17 (68.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:30 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1640 1784 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsNonExistentUser(UserCount: 5)" --job Default --benchmarkId 8 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 107100.00 ns, 107.1000 us/op
+WorkloadJitting  1: 1 op, 150123800.00 ns, 150.1238 ms/op
+
+WorkloadPilot    1: 2 op, 2081700.00 ns, 1.0409 ms/op
+WorkloadPilot    2: 3 op, 817000.00 ns, 272.3333 us/op
+WorkloadPilot    3: 4 op, 771300.00 ns, 192.8250 us/op
+WorkloadPilot    4: 5 op, 762300.00 ns, 152.4600 us/op
+WorkloadPilot    5: 6 op, 953500.00 ns, 158.9167 us/op
+WorkloadPilot    6: 7 op, 1129600.00 ns, 161.3714 us/op
+WorkloadPilot    7: 8 op, 1170900.00 ns, 146.3625 us/op
+WorkloadPilot    8: 9 op, 1346800.00 ns, 149.6444 us/op
+WorkloadPilot    9: 10 op, 1672200.00 ns, 167.2200 us/op
+WorkloadPilot   10: 11 op, 1699800.00 ns, 154.5273 us/op
+WorkloadPilot   11: 12 op, 1708300.00 ns, 142.3583 us/op
+WorkloadPilot   12: 13 op, 2060800.00 ns, 158.5231 us/op
+WorkloadPilot   13: 14 op, 2042600.00 ns, 145.9000 us/op
+WorkloadPilot   14: 15 op, 2369000.00 ns, 157.9333 us/op
+WorkloadPilot   15: 16 op, 2362600.00 ns, 147.6625 us/op
+WorkloadPilot   16: 32 op, 4463700.00 ns, 139.4906 us/op
+WorkloadPilot   17: 64 op, 8856200.00 ns, 138.3781 us/op
+WorkloadPilot   18: 128 op, 27418700.00 ns, 214.2086 us/op
+WorkloadPilot   19: 256 op, 41675400.00 ns, 162.7945 us/op
+WorkloadPilot   20: 512 op, 89871100.00 ns, 175.5295 us/op
+WorkloadPilot   21: 1024 op, 171262100.00 ns, 167.2481 us/op
+WorkloadPilot   22: 2048 op, 330829400.00 ns, 161.5378 us/op
+WorkloadPilot   23: 4096 op, 618795000.00 ns, 151.0730 us/op
+
+OverheadWarmup   1: 4096 op, 12500.00 ns, 3.0518 ns/op
+OverheadWarmup   2: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   3: 4096 op, 10500.00 ns, 2.5635 ns/op
+OverheadWarmup   4: 4096 op, 7800.00 ns, 1.9043 ns/op
+OverheadWarmup   5: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   6: 4096 op, 9500.00 ns, 2.3193 ns/op
+OverheadWarmup   7: 4096 op, 7900.00 ns, 1.9287 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 588749100.00 ns, 143.7376 us/op
+WorkloadActual   2: 4096 op, 464942500.00 ns, 113.5114 us/op
+WorkloadActual   3: 4096 op, 271957500.00 ns, 66.3959 us/op
+WorkloadActual   4: 4096 op, 232579000.00 ns, 56.7820 us/op
+WorkloadActual   5: 4096 op, 233605700.00 ns, 57.0326 us/op
+WorkloadActual   6: 4096 op, 234574700.00 ns, 57.2692 us/op
+WorkloadActual   7: 4096 op, 241648000.00 ns, 58.9961 us/op
+WorkloadActual   8: 4096 op, 232034200.00 ns, 56.6490 us/op
+WorkloadActual   9: 4096 op, 233425400.00 ns, 56.9886 us/op
+WorkloadActual  10: 4096 op, 234019000.00 ns, 57.1335 us/op
+WorkloadActual  11: 4096 op, 239034100.00 ns, 58.3579 us/op
+WorkloadActual  12: 4096 op, 236878600.00 ns, 57.8317 us/op
+WorkloadActual  13: 4096 op, 230534400.00 ns, 56.2828 us/op
+WorkloadActual  14: 4096 op, 228418900.00 ns, 55.7663 us/op
+WorkloadActual  15: 4096 op, 235480400.00 ns, 57.4903 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 232579000.00 ns, 56.7820 us/op
+WorkloadResult   2: 4096 op, 233605700.00 ns, 57.0326 us/op
+WorkloadResult   3: 4096 op, 234574700.00 ns, 57.2692 us/op
+WorkloadResult   4: 4096 op, 241648000.00 ns, 58.9961 us/op
+WorkloadResult   5: 4096 op, 232034200.00 ns, 56.6490 us/op
+WorkloadResult   6: 4096 op, 233425400.00 ns, 56.9886 us/op
+WorkloadResult   7: 4096 op, 234019000.00 ns, 57.1335 us/op
+WorkloadResult   8: 4096 op, 239034100.00 ns, 58.3579 us/op
+WorkloadResult   9: 4096 op, 236878600.00 ns, 57.8317 us/op
+WorkloadResult  10: 4096 op, 230534400.00 ns, 56.2828 us/op
+WorkloadResult  11: 4096 op, 228418900.00 ns, 55.7663 us/op
+WorkloadResult  12: 4096 op, 235480400.00 ns, 57.4903 us/op
+// GC:  5 1 0 48366544 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 76144 has exited with code 0.
+
+Mean = 57.215 μs, StdErr = 0.254 μs (0.44%), N = 12, StdDev = 0.879 μs
+Min = 55.766 μs, Q1 = 56.749 μs, Median = 57.083 μs, Q3 = 57.576 μs, Max = 58.996 μs
+IQR = 0.827 μs, LowerFence = 55.508 μs, UpperFence = 58.816 μs
+ConfidenceInterval = [56.089 μs; 58.341 μs] (CI 99.9%), Margin = 1.126 μs (1.97% of Mean)
+Skewness = 0.4, Kurtosis = 2.4, MValue = 2
+
+// ** Remained 16 (64.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:29 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1888 1876 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsAdmin(UserCount: 10)" --job Default --benchmarkId 9 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 131700.00 ns, 131.7000 us/op
+WorkloadJitting  1: 1 op, 8770500.00 ns, 8.7705 ms/op
+
+OverheadJitting  2: 16 op, 180500.00 ns, 11.2813 us/op
+WorkloadJitting  2: 16 op, 153300.00 ns, 9.5813 us/op
+
+WorkloadPilot    1: 16 op, 7200.00 ns, 450.0000 ns/op
+WorkloadPilot    2: 32 op, 5600.00 ns, 175.0000 ns/op
+WorkloadPilot    3: 64 op, 4500.00 ns, 70.3125 ns/op
+WorkloadPilot    4: 128 op, 12000.00 ns, 93.7500 ns/op
+WorkloadPilot    5: 256 op, 16800.00 ns, 65.6250 ns/op
+WorkloadPilot    6: 512 op, 22600.00 ns, 44.1406 ns/op
+WorkloadPilot    7: 1024 op, 41300.00 ns, 40.3320 ns/op
+WorkloadPilot    8: 2048 op, 82700.00 ns, 40.3809 ns/op
+WorkloadPilot    9: 4096 op, 152700.00 ns, 37.2803 ns/op
+WorkloadPilot   10: 8192 op, 342300.00 ns, 41.7847 ns/op
+WorkloadPilot   11: 16384 op, 579500.00 ns, 35.3699 ns/op
+WorkloadPilot   12: 32768 op, 1716700.00 ns, 52.3895 ns/op
+WorkloadPilot   13: 65536 op, 2446600.00 ns, 37.3322 ns/op
+WorkloadPilot   14: 131072 op, 4989400.00 ns, 38.0661 ns/op
+WorkloadPilot   15: 262144 op, 10345100.00 ns, 39.4634 ns/op
+WorkloadPilot   16: 524288 op, 18632500.00 ns, 35.5387 ns/op
+WorkloadPilot   17: 1048576 op, 36463000.00 ns, 34.7738 ns/op
+WorkloadPilot   18: 2097152 op, 53532200.00 ns, 25.5261 ns/op
+WorkloadPilot   19: 4194304 op, 58806300.00 ns, 14.0205 ns/op
+WorkloadPilot   20: 8388608 op, 124260100.00 ns, 14.8130 ns/op
+WorkloadPilot   21: 16777216 op, 232637900.00 ns, 13.8663 ns/op
+WorkloadPilot   22: 33554432 op, 479483400.00 ns, 14.2897 ns/op
+WorkloadPilot   23: 67108864 op, 941712000.00 ns, 14.0326 ns/op
+
+OverheadWarmup   1: 67108864 op, 130415600.00 ns, 1.9433 ns/op
+OverheadWarmup   2: 67108864 op, 146364700.00 ns, 2.1810 ns/op
+OverheadWarmup   3: 67108864 op, 95638100.00 ns, 1.4251 ns/op
+OverheadWarmup   4: 67108864 op, 94241700.00 ns, 1.4043 ns/op
+OverheadWarmup   5: 67108864 op, 94218600.00 ns, 1.4040 ns/op
+OverheadWarmup   6: 67108864 op, 93158100.00 ns, 1.3882 ns/op
+OverheadWarmup   7: 67108864 op, 91981000.00 ns, 1.3706 ns/op
+OverheadWarmup   8: 67108864 op, 91301800.00 ns, 1.3605 ns/op
+OverheadWarmup   9: 67108864 op, 92001700.00 ns, 1.3709 ns/op
+OverheadWarmup  10: 67108864 op, 98845900.00 ns, 1.4729 ns/op
+
+OverheadActual   1: 67108864 op, 101995300.00 ns, 1.5198 ns/op
+OverheadActual   2: 67108864 op, 97788400.00 ns, 1.4572 ns/op
+OverheadActual   3: 67108864 op, 93414600.00 ns, 1.3920 ns/op
+OverheadActual   4: 67108864 op, 93873200.00 ns, 1.3988 ns/op
+OverheadActual   5: 67108864 op, 92738500.00 ns, 1.3819 ns/op
+OverheadActual   6: 67108864 op, 92449100.00 ns, 1.3776 ns/op
+OverheadActual   7: 67108864 op, 92711600.00 ns, 1.3815 ns/op
+OverheadActual   8: 67108864 op, 95174300.00 ns, 1.4182 ns/op
+OverheadActual   9: 67108864 op, 97723100.00 ns, 1.4562 ns/op
+OverheadActual  10: 67108864 op, 96430200.00 ns, 1.4369 ns/op
+OverheadActual  11: 67108864 op, 93421600.00 ns, 1.3921 ns/op
+OverheadActual  12: 67108864 op, 90188200.00 ns, 1.3439 ns/op
+OverheadActual  13: 67108864 op, 92706500.00 ns, 1.3814 ns/op
+OverheadActual  14: 67108864 op, 92276300.00 ns, 1.3750 ns/op
+OverheadActual  15: 67108864 op, 91923800.00 ns, 1.3698 ns/op
+
+OverheadWarmup   1: 67108864 op, 92096300.00 ns, 1.3723 ns/op
+OverheadWarmup   2: 67108864 op, 90976100.00 ns, 1.3556 ns/op
+OverheadWarmup   3: 67108864 op, 94375500.00 ns, 1.4063 ns/op
+OverheadWarmup   4: 67108864 op, 91622500.00 ns, 1.3653 ns/op
+OverheadWarmup   5: 67108864 op, 96149000.00 ns, 1.4327 ns/op
+OverheadWarmup   6: 67108864 op, 92791100.00 ns, 1.3827 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 67108864 op, 936971000.00 ns, 13.9620 ns/op
+WorkloadActual   2: 67108864 op, 904326300.00 ns, 13.4755 ns/op
+WorkloadActual   3: 67108864 op, 911791200.00 ns, 13.5867 ns/op
+WorkloadActual   4: 67108864 op, 1008952800.00 ns, 15.0346 ns/op
+WorkloadActual   5: 67108864 op, 949141400.00 ns, 14.1433 ns/op
+WorkloadActual   6: 67108864 op, 850403800.00 ns, 12.6720 ns/op
+WorkloadActual   7: 67108864 op, 848770500.00 ns, 12.6477 ns/op
+WorkloadActual   8: 67108864 op, 892196900.00 ns, 13.2948 ns/op
+WorkloadActual   9: 67108864 op, 857779900.00 ns, 12.7819 ns/op
+WorkloadActual  10: 67108864 op, 895410500.00 ns, 13.3427 ns/op
+WorkloadActual  11: 67108864 op, 871866900.00 ns, 12.9918 ns/op
+WorkloadActual  12: 67108864 op, 839714300.00 ns, 12.5127 ns/op
+WorkloadActual  13: 67108864 op, 875409900.00 ns, 13.0446 ns/op
+WorkloadActual  14: 67108864 op, 919301700.00 ns, 13.6987 ns/op
+WorkloadActual  15: 67108864 op, 921059700.00 ns, 13.7249 ns/op
+WorkloadActual  16: 67108864 op, 900662600.00 ns, 13.4209 ns/op
+WorkloadActual  17: 67108864 op, 881506100.00 ns, 13.1355 ns/op
+WorkloadActual  18: 67108864 op, 847390200.00 ns, 12.6271 ns/op
+WorkloadActual  19: 67108864 op, 854162200.00 ns, 12.7280 ns/op
+WorkloadActual  20: 67108864 op, 852671100.00 ns, 12.7058 ns/op
+WorkloadActual  21: 67108864 op, 824005200.00 ns, 12.2786 ns/op
+WorkloadActual  22: 67108864 op, 834280000.00 ns, 12.4317 ns/op
+WorkloadActual  23: 67108864 op, 819488900.00 ns, 12.2113 ns/op
+WorkloadActual  24: 67108864 op, 823102400.00 ns, 12.2652 ns/op
+WorkloadActual  25: 67108864 op, 903019700.00 ns, 13.4560 ns/op
+WorkloadActual  26: 67108864 op, 873892600.00 ns, 13.0220 ns/op
+WorkloadActual  27: 67108864 op, 842898200.00 ns, 12.5602 ns/op
+WorkloadActual  28: 67108864 op, 831042100.00 ns, 12.3835 ns/op
+WorkloadActual  29: 67108864 op, 851903900.00 ns, 12.6944 ns/op
+WorkloadActual  30: 67108864 op, 846562300.00 ns, 12.6148 ns/op
+WorkloadActual  31: 67108864 op, 842778100.00 ns, 12.5584 ns/op
+WorkloadActual  32: 67108864 op, 840902200.00 ns, 12.5304 ns/op
+WorkloadActual  33: 67108864 op, 840898700.00 ns, 12.5304 ns/op
+WorkloadActual  34: 67108864 op, 817980200.00 ns, 12.1889 ns/op
+WorkloadActual  35: 67108864 op, 824247000.00 ns, 12.2822 ns/op
+WorkloadActual  36: 67108864 op, 872072600.00 ns, 12.9949 ns/op
+WorkloadActual  37: 67108864 op, 835320200.00 ns, 12.4472 ns/op
+WorkloadActual  38: 67108864 op, 846719100.00 ns, 12.6171 ns/op
+WorkloadActual  39: 67108864 op, 825991500.00 ns, 12.3082 ns/op
+WorkloadActual  40: 67108864 op, 816213100.00 ns, 12.1625 ns/op
+WorkloadActual  41: 67108864 op, 822589200.00 ns, 12.2575 ns/op
+WorkloadActual  42: 67108864 op, 827118700.00 ns, 12.3250 ns/op
+WorkloadActual  43: 67108864 op, 824058600.00 ns, 12.2794 ns/op
+WorkloadActual  44: 67108864 op, 828085500.00 ns, 12.3394 ns/op
+WorkloadActual  45: 67108864 op, 835791600.00 ns, 12.4543 ns/op
+WorkloadActual  46: 67108864 op, 930185000.00 ns, 13.8608 ns/op
+WorkloadActual  47: 67108864 op, 823776700.00 ns, 12.2752 ns/op
+WorkloadActual  48: 67108864 op, 861602100.00 ns, 12.8389 ns/op
+WorkloadActual  49: 67108864 op, 888185300.00 ns, 13.2350 ns/op
+WorkloadActual  50: 67108864 op, 848325600.00 ns, 12.6410 ns/op
+WorkloadActual  51: 67108864 op, 842742700.00 ns, 12.5578 ns/op
+WorkloadActual  52: 67108864 op, 844810800.00 ns, 12.5887 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 67108864 op, 843556400.00 ns, 12.5700 ns/op
+WorkloadResult   2: 67108864 op, 810911700.00 ns, 12.0835 ns/op
+WorkloadResult   3: 67108864 op, 818376600.00 ns, 12.1948 ns/op
+WorkloadResult   4: 67108864 op, 855726800.00 ns, 12.7513 ns/op
+WorkloadResult   5: 67108864 op, 756989200.00 ns, 11.2800 ns/op
+WorkloadResult   6: 67108864 op, 755355900.00 ns, 11.2557 ns/op
+WorkloadResult   7: 67108864 op, 798782300.00 ns, 11.9028 ns/op
+WorkloadResult   8: 67108864 op, 764365300.00 ns, 11.3899 ns/op
+WorkloadResult   9: 67108864 op, 801995900.00 ns, 11.9507 ns/op
+WorkloadResult  10: 67108864 op, 778452300.00 ns, 11.5998 ns/op
+WorkloadResult  11: 67108864 op, 746299700.00 ns, 11.1207 ns/op
+WorkloadResult  12: 67108864 op, 781995300.00 ns, 11.6526 ns/op
+WorkloadResult  13: 67108864 op, 825887100.00 ns, 12.3067 ns/op
+WorkloadResult  14: 67108864 op, 827645100.00 ns, 12.3329 ns/op
+WorkloadResult  15: 67108864 op, 807248000.00 ns, 12.0289 ns/op
+WorkloadResult  16: 67108864 op, 788091500.00 ns, 11.7435 ns/op
+WorkloadResult  17: 67108864 op, 753975600.00 ns, 11.2351 ns/op
+WorkloadResult  18: 67108864 op, 760747600.00 ns, 11.3360 ns/op
+WorkloadResult  19: 67108864 op, 759256500.00 ns, 11.3138 ns/op
+WorkloadResult  20: 67108864 op, 730590600.00 ns, 10.8866 ns/op
+WorkloadResult  21: 67108864 op, 740865400.00 ns, 11.0398 ns/op
+WorkloadResult  22: 67108864 op, 726074300.00 ns, 10.8194 ns/op
+WorkloadResult  23: 67108864 op, 729687800.00 ns, 10.8732 ns/op
+WorkloadResult  24: 67108864 op, 809605100.00 ns, 12.0641 ns/op
+WorkloadResult  25: 67108864 op, 780478000.00 ns, 11.6300 ns/op
+WorkloadResult  26: 67108864 op, 749483600.00 ns, 11.1682 ns/op
+WorkloadResult  27: 67108864 op, 737627500.00 ns, 10.9915 ns/op
+WorkloadResult  28: 67108864 op, 758489300.00 ns, 11.3024 ns/op
+WorkloadResult  29: 67108864 op, 753147700.00 ns, 11.2228 ns/op
+WorkloadResult  30: 67108864 op, 749363500.00 ns, 11.1664 ns/op
+WorkloadResult  31: 67108864 op, 747487600.00 ns, 11.1384 ns/op
+WorkloadResult  32: 67108864 op, 747484100.00 ns, 11.1384 ns/op
+WorkloadResult  33: 67108864 op, 724565600.00 ns, 10.7969 ns/op
+WorkloadResult  34: 67108864 op, 730832400.00 ns, 10.8903 ns/op
+WorkloadResult  35: 67108864 op, 778658000.00 ns, 11.6029 ns/op
+WorkloadResult  36: 67108864 op, 741905600.00 ns, 11.0553 ns/op
+WorkloadResult  37: 67108864 op, 753304500.00 ns, 11.2251 ns/op
+WorkloadResult  38: 67108864 op, 732576900.00 ns, 10.9162 ns/op
+WorkloadResult  39: 67108864 op, 722798500.00 ns, 10.7705 ns/op
+WorkloadResult  40: 67108864 op, 729174600.00 ns, 10.8655 ns/op
+WorkloadResult  41: 67108864 op, 733704100.00 ns, 10.9330 ns/op
+WorkloadResult  42: 67108864 op, 730644000.00 ns, 10.8874 ns/op
+WorkloadResult  43: 67108864 op, 734670900.00 ns, 10.9474 ns/op
+WorkloadResult  44: 67108864 op, 742377000.00 ns, 11.0623 ns/op
+WorkloadResult  45: 67108864 op, 836770400.00 ns, 12.4689 ns/op
+WorkloadResult  46: 67108864 op, 730362100.00 ns, 10.8832 ns/op
+WorkloadResult  47: 67108864 op, 768187500.00 ns, 11.4469 ns/op
+WorkloadResult  48: 67108864 op, 794770700.00 ns, 11.8430 ns/op
+WorkloadResult  49: 67108864 op, 754911000.00 ns, 11.2491 ns/op
+WorkloadResult  50: 67108864 op, 749328100.00 ns, 11.1659 ns/op
+WorkloadResult  51: 67108864 op, 751396200.00 ns, 11.1967 ns/op
+// GC:  256 0 0 2147483648 67108864
+// Threading:  0 0 67108864
+
+// AfterAll
+// Benchmark Process 78676 has exited with code 0.
+
+Mean = 11.406 ns, StdErr = 0.073 ns (0.64%), N = 51, StdDev = 0.520 ns
+Min = 10.771 ns, Q1 = 11.016 ns, Median = 11.235 ns, Q3 = 11.698 ns, Max = 12.751 ns
+IQR = 0.682 ns, LowerFence = 9.992 ns, UpperFence = 12.722 ns
+ConfidenceInterval = [11.151 ns; 11.660 ns] (CI 99.9%), Margin = 0.255 ns (2.23% of Mean)
+Skewness = 0.88, Kurtosis = 2.7, MValue = 2
+
+// ** Remained 15 (60.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:31 (0h 3m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1920 1916 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsExistingUser(UserCount: 10)" --job Default --benchmarkId 10 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 95800.00 ns, 95.8000 us/op
+WorkloadJitting  1: 1 op, 146451800.00 ns, 146.4518 ms/op
+
+WorkloadPilot    1: 2 op, 1995500.00 ns, 997.7500 us/op
+WorkloadPilot    2: 3 op, 618000.00 ns, 206.0000 us/op
+WorkloadPilot    3: 4 op, 614200.00 ns, 153.5500 us/op
+WorkloadPilot    4: 5 op, 722000.00 ns, 144.4000 us/op
+WorkloadPilot    5: 6 op, 994200.00 ns, 165.7000 us/op
+WorkloadPilot    6: 7 op, 996100.00 ns, 142.3000 us/op
+WorkloadPilot    7: 8 op, 1120700.00 ns, 140.0875 us/op
+WorkloadPilot    8: 9 op, 1387300.00 ns, 154.1444 us/op
+WorkloadPilot    9: 10 op, 1467300.00 ns, 146.7300 us/op
+WorkloadPilot   10: 11 op, 1532200.00 ns, 139.2909 us/op
+WorkloadPilot   11: 12 op, 1664700.00 ns, 138.7250 us/op
+WorkloadPilot   12: 13 op, 1807100.00 ns, 139.0077 us/op
+WorkloadPilot   13: 14 op, 1951200.00 ns, 139.3714 us/op
+WorkloadPilot   14: 15 op, 2228300.00 ns, 148.5533 us/op
+WorkloadPilot   15: 16 op, 2262600.00 ns, 141.4125 us/op
+WorkloadPilot   16: 32 op, 4408200.00 ns, 137.7563 us/op
+WorkloadPilot   17: 64 op, 9047300.00 ns, 141.3641 us/op
+WorkloadPilot   18: 128 op, 17665200.00 ns, 138.0094 us/op
+WorkloadPilot   19: 256 op, 45409300.00 ns, 177.3801 us/op
+WorkloadPilot   20: 512 op, 80123600.00 ns, 156.4914 us/op
+WorkloadPilot   21: 1024 op, 151609500.00 ns, 148.0562 us/op
+WorkloadPilot   22: 2048 op, 314421600.00 ns, 153.5262 us/op
+WorkloadPilot   23: 4096 op, 603058000.00 ns, 147.2310 us/op
+
+OverheadWarmup   1: 4096 op, 9800.00 ns, 2.3926 ns/op
+OverheadWarmup   2: 4096 op, 8500.00 ns, 2.0752 ns/op
+OverheadWarmup   3: 4096 op, 9000.00 ns, 2.1973 ns/op
+OverheadWarmup   4: 4096 op, 9500.00 ns, 2.3193 ns/op
+OverheadWarmup   5: 4096 op, 8000.00 ns, 1.9531 ns/op
+OverheadWarmup   6: 4096 op, 8500.00 ns, 2.0752 ns/op
+OverheadWarmup   7: 4096 op, 8100.00 ns, 1.9775 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 607574200.00 ns, 148.3335 us/op
+WorkloadActual   2: 4096 op, 477222100.00 ns, 116.5093 us/op
+WorkloadActual   3: 4096 op, 302499500.00 ns, 73.8524 us/op
+WorkloadActual   4: 4096 op, 237628200.00 ns, 58.0147 us/op
+WorkloadActual   5: 4096 op, 233193500.00 ns, 56.9320 us/op
+WorkloadActual   6: 4096 op, 235859000.00 ns, 57.5828 us/op
+WorkloadActual   7: 4096 op, 238374500.00 ns, 58.1969 us/op
+WorkloadActual   8: 4096 op, 237039100.00 ns, 57.8709 us/op
+WorkloadActual   9: 4096 op, 238424800.00 ns, 58.2092 us/op
+WorkloadActual  10: 4096 op, 235632200.00 ns, 57.5274 us/op
+WorkloadActual  11: 4096 op, 238023800.00 ns, 58.1113 us/op
+WorkloadActual  12: 4096 op, 232812900.00 ns, 56.8391 us/op
+WorkloadActual  13: 4096 op, 237764500.00 ns, 58.0480 us/op
+WorkloadActual  14: 4096 op, 237265900.00 ns, 57.9262 us/op
+WorkloadActual  15: 4096 op, 241296900.00 ns, 58.9104 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 237628200.00 ns, 58.0147 us/op
+WorkloadResult   2: 4096 op, 233193500.00 ns, 56.9320 us/op
+WorkloadResult   3: 4096 op, 235859000.00 ns, 57.5828 us/op
+WorkloadResult   4: 4096 op, 238374500.00 ns, 58.1969 us/op
+WorkloadResult   5: 4096 op, 237039100.00 ns, 57.8709 us/op
+WorkloadResult   6: 4096 op, 238424800.00 ns, 58.2092 us/op
+WorkloadResult   7: 4096 op, 235632200.00 ns, 57.5274 us/op
+WorkloadResult   8: 4096 op, 238023800.00 ns, 58.1113 us/op
+WorkloadResult   9: 4096 op, 232812900.00 ns, 56.8391 us/op
+WorkloadResult  10: 4096 op, 237764500.00 ns, 58.0480 us/op
+WorkloadResult  11: 4096 op, 237265900.00 ns, 57.9262 us/op
+WorkloadResult  12: 4096 op, 241296900.00 ns, 58.9104 us/op
+// GC:  5 1 0 49382792 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 78520 has exited with code 0.
+
+Mean = 57.847 μs, StdErr = 0.164 μs (0.28%), N = 12, StdDev = 0.568 μs
+Min = 56.839 μs, Q1 = 57.569 μs, Median = 57.970 μs, Q3 = 58.133 μs, Max = 58.910 μs
+IQR = 0.564 μs, LowerFence = 56.723 μs, UpperFence = 58.978 μs
+ConfidenceInterval = [57.119 μs; 58.576 μs] (CI 99.9%), Margin = 0.728 μs (1.26% of Mean)
+Skewness = -0.24, Kurtosis = 2.45, MValue = 2
+
+// ** Remained 14 (56.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:31 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=10]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1764 1808 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsNonExistentUser(UserCount: 10)" --job Default --benchmarkId 11 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 111000.00 ns, 111.0000 us/op
+WorkloadJitting  1: 1 op, 143011400.00 ns, 143.0114 ms/op
+
+WorkloadPilot    1: 2 op, 1901500.00 ns, 950.7500 us/op
+WorkloadPilot    2: 3 op, 450300.00 ns, 150.1000 us/op
+WorkloadPilot    3: 4 op, 619200.00 ns, 154.8000 us/op
+WorkloadPilot    4: 5 op, 696000.00 ns, 139.2000 us/op
+WorkloadPilot    5: 6 op, 822500.00 ns, 137.0833 us/op
+WorkloadPilot    6: 7 op, 952100.00 ns, 136.0143 us/op
+WorkloadPilot    7: 8 op, 1233600.00 ns, 154.2000 us/op
+WorkloadPilot    8: 9 op, 1231500.00 ns, 136.8333 us/op
+WorkloadPilot    9: 10 op, 1344300.00 ns, 134.4300 us/op
+WorkloadPilot   10: 11 op, 1546700.00 ns, 140.6091 us/op
+WorkloadPilot   11: 12 op, 1593100.00 ns, 132.7583 us/op
+WorkloadPilot   12: 13 op, 1740800.00 ns, 133.9077 us/op
+WorkloadPilot   13: 14 op, 2017000.00 ns, 144.0714 us/op
+WorkloadPilot   14: 15 op, 2003200.00 ns, 133.5467 us/op
+WorkloadPilot   15: 16 op, 2173400.00 ns, 135.8375 us/op
+WorkloadPilot   16: 32 op, 4340500.00 ns, 135.6406 us/op
+WorkloadPilot   17: 64 op, 8766600.00 ns, 136.9781 us/op
+WorkloadPilot   18: 128 op, 17413800.00 ns, 136.0453 us/op
+WorkloadPilot   19: 256 op, 45780200.00 ns, 178.8289 us/op
+WorkloadPilot   20: 512 op, 81578200.00 ns, 159.3324 us/op
+WorkloadPilot   21: 1024 op, 152339000.00 ns, 148.7686 us/op
+WorkloadPilot   22: 2048 op, 306281400.00 ns, 149.5515 us/op
+WorkloadPilot   23: 4096 op, 606791600.00 ns, 148.1425 us/op
+
+OverheadWarmup   1: 4096 op, 13200.00 ns, 3.2227 ns/op
+OverheadWarmup   2: 4096 op, 7700.00 ns, 1.8799 ns/op
+OverheadWarmup   3: 4096 op, 7700.00 ns, 1.8799 ns/op
+OverheadWarmup   4: 4096 op, 7500.00 ns, 1.8311 ns/op
+OverheadWarmup   5: 4096 op, 7700.00 ns, 1.8799 ns/op
+OverheadWarmup   6: 4096 op, 7700.00 ns, 1.8799 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 576260000.00 ns, 140.6885 us/op
+WorkloadActual   2: 4096 op, 475815200.00 ns, 116.1658 us/op
+WorkloadActual   3: 4096 op, 293355600.00 ns, 71.6200 us/op
+WorkloadActual   4: 4096 op, 227275100.00 ns, 55.4871 us/op
+WorkloadActual   5: 4096 op, 227696300.00 ns, 55.5899 us/op
+WorkloadActual   6: 4096 op, 226410000.00 ns, 55.2759 us/op
+WorkloadActual   7: 4096 op, 233286300.00 ns, 56.9547 us/op
+WorkloadActual   8: 4096 op, 233529800.00 ns, 57.0141 us/op
+WorkloadActual   9: 4096 op, 243902800.00 ns, 59.5466 us/op
+WorkloadActual  10: 4096 op, 224402000.00 ns, 54.7856 us/op
+WorkloadActual  11: 4096 op, 224093900.00 ns, 54.7104 us/op
+WorkloadActual  12: 4096 op, 240197700.00 ns, 58.6420 us/op
+WorkloadActual  13: 4096 op, 241527100.00 ns, 58.9666 us/op
+WorkloadActual  14: 4096 op, 234819800.00 ns, 57.3291 us/op
+WorkloadActual  15: 4096 op, 229205100.00 ns, 55.9583 us/op
+WorkloadActual  16: 4096 op, 235330400.00 ns, 57.4537 us/op
+WorkloadActual  17: 4096 op, 230720500.00 ns, 56.3282 us/op
+WorkloadActual  18: 4096 op, 230990800.00 ns, 56.3942 us/op
+WorkloadActual  19: 4096 op, 228220600.00 ns, 55.7179 us/op
+WorkloadActual  20: 4096 op, 233776700.00 ns, 57.0744 us/op
+WorkloadActual  21: 4096 op, 231696700.00 ns, 56.5666 us/op
+WorkloadActual  22: 4096 op, 231615500.00 ns, 56.5468 us/op
+WorkloadActual  23: 4096 op, 226496400.00 ns, 55.2970 us/op
+WorkloadActual  24: 4096 op, 227111400.00 ns, 55.4471 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 227275100.00 ns, 55.4871 us/op
+WorkloadResult   2: 4096 op, 227696300.00 ns, 55.5899 us/op
+WorkloadResult   3: 4096 op, 226410000.00 ns, 55.2759 us/op
+WorkloadResult   4: 4096 op, 233286300.00 ns, 56.9547 us/op
+WorkloadResult   5: 4096 op, 233529800.00 ns, 57.0141 us/op
+WorkloadResult   6: 4096 op, 243902800.00 ns, 59.5466 us/op
+WorkloadResult   7: 4096 op, 224402000.00 ns, 54.7856 us/op
+WorkloadResult   8: 4096 op, 224093900.00 ns, 54.7104 us/op
+WorkloadResult   9: 4096 op, 240197700.00 ns, 58.6420 us/op
+WorkloadResult  10: 4096 op, 241527100.00 ns, 58.9666 us/op
+WorkloadResult  11: 4096 op, 234819800.00 ns, 57.3291 us/op
+WorkloadResult  12: 4096 op, 229205100.00 ns, 55.9583 us/op
+WorkloadResult  13: 4096 op, 235330400.00 ns, 57.4537 us/op
+WorkloadResult  14: 4096 op, 230720500.00 ns, 56.3282 us/op
+WorkloadResult  15: 4096 op, 230990800.00 ns, 56.3942 us/op
+WorkloadResult  16: 4096 op, 228220600.00 ns, 55.7179 us/op
+WorkloadResult  17: 4096 op, 233776700.00 ns, 57.0744 us/op
+WorkloadResult  18: 4096 op, 231696700.00 ns, 56.5666 us/op
+WorkloadResult  19: 4096 op, 231615500.00 ns, 56.5468 us/op
+WorkloadResult  20: 4096 op, 226496400.00 ns, 55.2970 us/op
+WorkloadResult  21: 4096 op, 227111400.00 ns, 55.4471 us/op
+// GC:  5 1 0 48366544 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 78120 has exited with code 0.
+
+Mean = 56.528 μs, StdErr = 0.290 μs (0.51%), N = 21, StdDev = 1.329 μs
+Min = 54.710 μs, Q1 = 55.487 μs, Median = 56.394 μs, Q3 = 57.074 μs, Max = 59.547 μs
+IQR = 1.587 μs, LowerFence = 53.106 μs, UpperFence = 59.455 μs
+ConfidenceInterval = [55.411 μs; 57.645 μs] (CI 99.9%), Margin = 1.117 μs (1.98% of Mean)
+Skewness = 0.69, Kurtosis = 2.57, MValue = 2
+
+// ** Remained 13 (52.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:31 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=15]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1548 1924 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsAdmin(UserCount: 15)" --job Default --benchmarkId 12 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 97800.00 ns, 97.8000 us/op
+WorkloadJitting  1: 1 op, 7602100.00 ns, 7.6021 ms/op
+
+OverheadJitting  2: 16 op, 159400.00 ns, 9.9625 us/op
+WorkloadJitting  2: 16 op, 146400.00 ns, 9.1500 us/op
+
+WorkloadPilot    1: 16 op, 2900.00 ns, 181.2500 ns/op
+WorkloadPilot    2: 32 op, 3500.00 ns, 109.3750 ns/op
+WorkloadPilot    3: 64 op, 4000.00 ns, 62.5000 ns/op
+WorkloadPilot    4: 128 op, 5900.00 ns, 46.0938 ns/op
+WorkloadPilot    5: 256 op, 9600.00 ns, 37.5000 ns/op
+WorkloadPilot    6: 512 op, 17800.00 ns, 34.7656 ns/op
+WorkloadPilot    7: 1024 op, 34300.00 ns, 33.4961 ns/op
+WorkloadPilot    8: 2048 op, 69400.00 ns, 33.8867 ns/op
+WorkloadPilot    9: 4096 op, 132800.00 ns, 32.4219 ns/op
+WorkloadPilot   10: 8192 op, 299000.00 ns, 36.4990 ns/op
+WorkloadPilot   11: 16384 op, 526800.00 ns, 32.1533 ns/op
+WorkloadPilot   12: 32768 op, 1007700.00 ns, 30.7526 ns/op
+WorkloadPilot   13: 65536 op, 2441700.00 ns, 37.2574 ns/op
+WorkloadPilot   14: 131072 op, 4429300.00 ns, 33.7929 ns/op
+WorkloadPilot   15: 262144 op, 9871300.00 ns, 37.6560 ns/op
+WorkloadPilot   16: 524288 op, 18093800.00 ns, 34.5112 ns/op
+WorkloadPilot   17: 1048576 op, 36042900.00 ns, 34.3732 ns/op
+WorkloadPilot   18: 2097152 op, 63479800.00 ns, 30.2695 ns/op
+WorkloadPilot   19: 4194304 op, 55287400.00 ns, 13.1815 ns/op
+WorkloadPilot   20: 8388608 op, 112650700.00 ns, 13.4290 ns/op
+WorkloadPilot   21: 16777216 op, 231249200.00 ns, 13.7835 ns/op
+WorkloadPilot   22: 33554432 op, 454171300.00 ns, 13.5354 ns/op
+WorkloadPilot   23: 67108864 op, 873275500.00 ns, 13.0128 ns/op
+
+OverheadWarmup   1: 67108864 op, 128548000.00 ns, 1.9155 ns/op
+OverheadWarmup   2: 67108864 op, 150750000.00 ns, 2.2464 ns/op
+OverheadWarmup   3: 67108864 op, 159266500.00 ns, 2.3733 ns/op
+OverheadWarmup   4: 67108864 op, 159906100.00 ns, 2.3828 ns/op
+OverheadWarmup   5: 67108864 op, 157548600.00 ns, 2.3477 ns/op
+OverheadWarmup   6: 67108864 op, 157861100.00 ns, 2.3523 ns/op
+OverheadWarmup   7: 67108864 op, 159555300.00 ns, 2.3776 ns/op
+OverheadWarmup   8: 67108864 op, 91949300.00 ns, 1.3702 ns/op
+
+OverheadActual   1: 67108864 op, 90593300.00 ns, 1.3499 ns/op
+OverheadActual   2: 67108864 op, 90148400.00 ns, 1.3433 ns/op
+OverheadActual   3: 67108864 op, 89645300.00 ns, 1.3358 ns/op
+OverheadActual   4: 67108864 op, 90532800.00 ns, 1.3490 ns/op
+OverheadActual   5: 67108864 op, 87896400.00 ns, 1.3098 ns/op
+OverheadActual   6: 67108864 op, 88756000.00 ns, 1.3226 ns/op
+OverheadActual   7: 67108864 op, 88388000.00 ns, 1.3171 ns/op
+OverheadActual   8: 67108864 op, 93011000.00 ns, 1.3860 ns/op
+OverheadActual   9: 67108864 op, 91851300.00 ns, 1.3687 ns/op
+OverheadActual  10: 67108864 op, 93376200.00 ns, 1.3914 ns/op
+OverheadActual  11: 67108864 op, 92810800.00 ns, 1.3830 ns/op
+OverheadActual  12: 67108864 op, 91969100.00 ns, 1.3704 ns/op
+OverheadActual  13: 67108864 op, 91846700.00 ns, 1.3686 ns/op
+OverheadActual  14: 67108864 op, 92126000.00 ns, 1.3728 ns/op
+OverheadActual  15: 67108864 op, 90868000.00 ns, 1.3540 ns/op
+
+OverheadWarmup   1: 67108864 op, 90307300.00 ns, 1.3457 ns/op
+OverheadWarmup   2: 67108864 op, 88997100.00 ns, 1.3262 ns/op
+OverheadWarmup   3: 67108864 op, 90831900.00 ns, 1.3535 ns/op
+OverheadWarmup   4: 67108864 op, 89732700.00 ns, 1.3371 ns/op
+OverheadWarmup   5: 67108864 op, 90598100.00 ns, 1.3500 ns/op
+OverheadWarmup   6: 67108864 op, 91953500.00 ns, 1.3702 ns/op
+OverheadWarmup   7: 67108864 op, 90389100.00 ns, 1.3469 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 67108864 op, 846125500.00 ns, 12.6083 ns/op
+WorkloadActual   2: 67108864 op, 902008300.00 ns, 13.4410 ns/op
+WorkloadActual   3: 67108864 op, 847835800.00 ns, 12.6337 ns/op
+WorkloadActual   4: 67108864 op, 855612100.00 ns, 12.7496 ns/op
+WorkloadActual   5: 67108864 op, 880963200.00 ns, 13.1274 ns/op
+WorkloadActual   6: 67108864 op, 828404300.00 ns, 12.3442 ns/op
+WorkloadActual   7: 67108864 op, 827171500.00 ns, 12.3258 ns/op
+WorkloadActual   8: 67108864 op, 830717400.00 ns, 12.3787 ns/op
+WorkloadActual   9: 67108864 op, 887773000.00 ns, 13.2288 ns/op
+WorkloadActual  10: 67108864 op, 910717000.00 ns, 13.5707 ns/op
+WorkloadActual  11: 67108864 op, 905832300.00 ns, 13.4980 ns/op
+WorkloadActual  12: 67108864 op, 876738500.00 ns, 13.0644 ns/op
+WorkloadActual  13: 67108864 op, 845151300.00 ns, 12.5937 ns/op
+WorkloadActual  14: 67108864 op, 843886500.00 ns, 12.5749 ns/op
+WorkloadActual  15: 67108864 op, 832692200.00 ns, 12.4081 ns/op
+WorkloadActual  16: 67108864 op, 832051600.00 ns, 12.3985 ns/op
+WorkloadActual  17: 67108864 op, 833301700.00 ns, 12.4172 ns/op
+WorkloadActual  18: 67108864 op, 840956300.00 ns, 12.5312 ns/op
+WorkloadActual  19: 67108864 op, 858802800.00 ns, 12.7972 ns/op
+WorkloadActual  20: 67108864 op, 944006300.00 ns, 14.0668 ns/op
+WorkloadActual  21: 67108864 op, 895163400.00 ns, 13.3390 ns/op
+WorkloadActual  22: 67108864 op, 833419700.00 ns, 12.4189 ns/op
+WorkloadActual  23: 67108864 op, 827861000.00 ns, 12.3361 ns/op
+WorkloadActual  24: 67108864 op, 830423000.00 ns, 12.3743 ns/op
+WorkloadActual  25: 67108864 op, 850043100.00 ns, 12.6666 ns/op
+WorkloadActual  26: 67108864 op, 845208800.00 ns, 12.5946 ns/op
+WorkloadActual  27: 67108864 op, 842769700.00 ns, 12.5582 ns/op
+WorkloadActual  28: 67108864 op, 843977900.00 ns, 12.5763 ns/op
+WorkloadActual  29: 67108864 op, 844167100.00 ns, 12.5791 ns/op
+WorkloadActual  30: 67108864 op, 845003800.00 ns, 12.5915 ns/op
+WorkloadActual  31: 67108864 op, 842420200.00 ns, 12.5530 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 67108864 op, 755257500.00 ns, 11.2542 ns/op
+WorkloadResult   2: 67108864 op, 811140300.00 ns, 12.0869 ns/op
+WorkloadResult   3: 67108864 op, 756967800.00 ns, 11.2797 ns/op
+WorkloadResult   4: 67108864 op, 764744100.00 ns, 11.3956 ns/op
+WorkloadResult   5: 67108864 op, 790095200.00 ns, 11.7733 ns/op
+WorkloadResult   6: 67108864 op, 737536300.00 ns, 10.9901 ns/op
+WorkloadResult   7: 67108864 op, 736303500.00 ns, 10.9718 ns/op
+WorkloadResult   8: 67108864 op, 739849400.00 ns, 11.0246 ns/op
+WorkloadResult   9: 67108864 op, 796905000.00 ns, 11.8748 ns/op
+WorkloadResult  10: 67108864 op, 819849000.00 ns, 12.2167 ns/op
+WorkloadResult  11: 67108864 op, 814964300.00 ns, 12.1439 ns/op
+WorkloadResult  12: 67108864 op, 785870500.00 ns, 11.7104 ns/op
+WorkloadResult  13: 67108864 op, 754283300.00 ns, 11.2397 ns/op
+WorkloadResult  14: 67108864 op, 753018500.00 ns, 11.2209 ns/op
+WorkloadResult  15: 67108864 op, 741824200.00 ns, 11.0540 ns/op
+WorkloadResult  16: 67108864 op, 741183600.00 ns, 11.0445 ns/op
+WorkloadResult  17: 67108864 op, 742433700.00 ns, 11.0631 ns/op
+WorkloadResult  18: 67108864 op, 750088300.00 ns, 11.1772 ns/op
+WorkloadResult  19: 67108864 op, 767934800.00 ns, 11.4431 ns/op
+WorkloadResult  20: 67108864 op, 804295400.00 ns, 11.9849 ns/op
+WorkloadResult  21: 67108864 op, 742551700.00 ns, 11.0649 ns/op
+WorkloadResult  22: 67108864 op, 736993000.00 ns, 10.9821 ns/op
+WorkloadResult  23: 67108864 op, 739555000.00 ns, 11.0202 ns/op
+WorkloadResult  24: 67108864 op, 759175100.00 ns, 11.3126 ns/op
+WorkloadResult  25: 67108864 op, 754340800.00 ns, 11.2406 ns/op
+WorkloadResult  26: 67108864 op, 751901700.00 ns, 11.2042 ns/op
+WorkloadResult  27: 67108864 op, 753109900.00 ns, 11.2222 ns/op
+WorkloadResult  28: 67108864 op, 753299100.00 ns, 11.2250 ns/op
+WorkloadResult  29: 67108864 op, 754135800.00 ns, 11.2375 ns/op
+WorkloadResult  30: 67108864 op, 751552200.00 ns, 11.1990 ns/op
+// GC:  256 0 0 2147483648 67108864
+// Threading:  0 0 67108864
+
+// AfterAll
+// Benchmark Process 77220 has exited with code 0.
+
+Mean = 11.355 ns, StdErr = 0.068 ns (0.60%), N = 30, StdDev = 0.374 ns
+Min = 10.972 ns, Q1 = 11.064 ns, Median = 11.231 ns, Q3 = 11.431 ns, Max = 12.217 ns
+IQR = 0.368 ns, LowerFence = 10.512 ns, UpperFence = 11.983 ns
+ConfidenceInterval = [11.105 ns; 11.605 ns] (CI 99.9%), Margin = 0.250 ns (2.20% of Mean)
+Skewness = 1.06, Kurtosis = 2.75, MValue = 2
+
+// ** Remained 12 (48.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:32 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=15]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1604 1680 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsExistingUser(UserCount: 15)" --job Default --benchmarkId 13 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 306800.00 ns, 306.8000 us/op
+WorkloadJitting  1: 1 op, 160266700.00 ns, 160.2667 ms/op
+
+WorkloadPilot    1: 2 op, 2293400.00 ns, 1.1467 ms/op
+WorkloadPilot    2: 3 op, 524200.00 ns, 174.7333 us/op
+WorkloadPilot    3: 4 op, 657100.00 ns, 164.2750 us/op
+WorkloadPilot    4: 5 op, 759900.00 ns, 151.9800 us/op
+WorkloadPilot    5: 6 op, 864000.00 ns, 144.0000 us/op
+WorkloadPilot    6: 7 op, 1033900.00 ns, 147.7000 us/op
+WorkloadPilot    7: 8 op, 1199400.00 ns, 149.9250 us/op
+WorkloadPilot    8: 9 op, 1296500.00 ns, 144.0556 us/op
+WorkloadPilot    9: 10 op, 1436900.00 ns, 143.6900 us/op
+WorkloadPilot   10: 11 op, 1589300.00 ns, 144.4818 us/op
+WorkloadPilot   11: 12 op, 1734100.00 ns, 144.5083 us/op
+WorkloadPilot   12: 13 op, 1818700.00 ns, 139.9000 us/op
+WorkloadPilot   13: 14 op, 2007100.00 ns, 143.3643 us/op
+WorkloadPilot   14: 15 op, 2081000.00 ns, 138.7333 us/op
+WorkloadPilot   15: 16 op, 2316800.00 ns, 144.8000 us/op
+WorkloadPilot   16: 32 op, 4464800.00 ns, 139.5250 us/op
+WorkloadPilot   17: 64 op, 9002900.00 ns, 140.6703 us/op
+WorkloadPilot   18: 128 op, 17543400.00 ns, 137.0578 us/op
+WorkloadPilot   19: 256 op, 35088100.00 ns, 137.0629 us/op
+WorkloadPilot   20: 512 op, 80936300.00 ns, 158.0787 us/op
+WorkloadPilot   21: 1024 op, 168061500.00 ns, 164.1226 us/op
+WorkloadPilot   22: 2048 op, 321184700.00 ns, 156.8285 us/op
+WorkloadPilot   23: 4096 op, 602506000.00 ns, 147.0962 us/op
+
+OverheadWarmup   1: 4096 op, 10000.00 ns, 2.4414 ns/op
+OverheadWarmup   2: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   3: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   4: 4096 op, 7600.00 ns, 1.8555 ns/op
+OverheadWarmup   5: 4096 op, 7500.00 ns, 1.8311 ns/op
+OverheadWarmup   6: 4096 op, 7500.00 ns, 1.8311 ns/op
+OverheadWarmup   7: 4096 op, 7600.00 ns, 1.8555 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 611069700.00 ns, 149.1869 us/op
+WorkloadActual   2: 4096 op, 549173000.00 ns, 134.0754 us/op
+WorkloadActual   3: 4096 op, 392314000.00 ns, 95.7798 us/op
+WorkloadActual   4: 4096 op, 247275500.00 ns, 60.3700 us/op
+WorkloadActual   5: 4096 op, 237327400.00 ns, 57.9413 us/op
+WorkloadActual   6: 4096 op, 238634700.00 ns, 58.2604 us/op
+WorkloadActual   7: 4096 op, 237825800.00 ns, 58.0629 us/op
+WorkloadActual   8: 4096 op, 232819100.00 ns, 56.8406 us/op
+WorkloadActual   9: 4096 op, 236591700.00 ns, 57.7616 us/op
+WorkloadActual  10: 4096 op, 238977700.00 ns, 58.3442 us/op
+WorkloadActual  11: 4096 op, 234639400.00 ns, 57.2850 us/op
+WorkloadActual  12: 4096 op, 234406800.00 ns, 57.2282 us/op
+WorkloadActual  13: 4096 op, 234402900.00 ns, 57.2273 us/op
+WorkloadActual  14: 4096 op, 239205800.00 ns, 58.3999 us/op
+WorkloadActual  15: 4096 op, 234545300.00 ns, 57.2620 us/op
+WorkloadActual  16: 4096 op, 238972500.00 ns, 58.3429 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 247275500.00 ns, 60.3700 us/op
+WorkloadResult   2: 4096 op, 237327400.00 ns, 57.9413 us/op
+WorkloadResult   3: 4096 op, 238634700.00 ns, 58.2604 us/op
+WorkloadResult   4: 4096 op, 237825800.00 ns, 58.0629 us/op
+WorkloadResult   5: 4096 op, 232819100.00 ns, 56.8406 us/op
+WorkloadResult   6: 4096 op, 236591700.00 ns, 57.7616 us/op
+WorkloadResult   7: 4096 op, 238977700.00 ns, 58.3442 us/op
+WorkloadResult   8: 4096 op, 234639400.00 ns, 57.2850 us/op
+WorkloadResult   9: 4096 op, 234406800.00 ns, 57.2282 us/op
+WorkloadResult  10: 4096 op, 234402900.00 ns, 57.2273 us/op
+WorkloadResult  11: 4096 op, 239205800.00 ns, 58.3999 us/op
+WorkloadResult  12: 4096 op, 234545300.00 ns, 57.2620 us/op
+WorkloadResult  13: 4096 op, 238972500.00 ns, 58.3429 us/op
+// GC:  5 1 0 49382792 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 78796 has exited with code 0.
+
+Mean = 57.948 μs, StdErr = 0.249 μs (0.43%), N = 13, StdDev = 0.899 μs
+Min = 56.841 μs, Q1 = 57.262 μs, Median = 57.941 μs, Q3 = 58.343 μs, Max = 60.370 μs
+IQR = 1.081 μs, LowerFence = 55.641 μs, UpperFence = 59.964 μs
+ConfidenceInterval = [56.871 μs; 59.025 μs] (CI 99.9%), Margin = 1.077 μs (1.86% of Mean)
+Skewness = 1.24, Kurtosis = 4.35, MValue = 2
+
+// ** Remained 11 (44.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:32 (0h 2m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=15]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1940 1936 --benchmarkName "ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks.LoginAsNonExistentUser(UserCount: 15)" --job Default --benchmarkId 14 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 106700.00 ns, 106.7000 us/op
+WorkloadJitting  1: 1 op, 146740600.00 ns, 146.7406 ms/op
+
+WorkloadPilot    1: 2 op, 2060200.00 ns, 1.0301 ms/op
+WorkloadPilot    2: 3 op, 518500.00 ns, 172.8333 us/op
+WorkloadPilot    3: 4 op, 610200.00 ns, 152.5500 us/op
+WorkloadPilot    4: 5 op, 703500.00 ns, 140.7000 us/op
+WorkloadPilot    5: 6 op, 839600.00 ns, 139.9333 us/op
+WorkloadPilot    6: 7 op, 941600.00 ns, 134.5143 us/op
+WorkloadPilot    7: 8 op, 1142200.00 ns, 142.7750 us/op
+WorkloadPilot    8: 9 op, 1195600.00 ns, 132.8444 us/op
+WorkloadPilot    9: 10 op, 1342500.00 ns, 134.2500 us/op
+WorkloadPilot   10: 11 op, 1515900.00 ns, 137.8091 us/op
+WorkloadPilot   11: 12 op, 1727300.00 ns, 143.9417 us/op
+WorkloadPilot   12: 13 op, 1762400.00 ns, 135.5692 us/op
+WorkloadPilot   13: 14 op, 1936100.00 ns, 138.2929 us/op
+WorkloadPilot   14: 15 op, 2089300.00 ns, 139.2867 us/op
+WorkloadPilot   15: 16 op, 2135700.00 ns, 133.4813 us/op
+WorkloadPilot   16: 32 op, 4551400.00 ns, 142.2313 us/op
+WorkloadPilot   17: 64 op, 8634300.00 ns, 134.9109 us/op
+WorkloadPilot   18: 128 op, 17845200.00 ns, 139.4156 us/op
+WorkloadPilot   19: 256 op, 46139900.00 ns, 180.2340 us/op
+WorkloadPilot   20: 512 op, 73494500.00 ns, 143.5439 us/op
+WorkloadPilot   21: 1024 op, 153242800.00 ns, 149.6512 us/op
+WorkloadPilot   22: 2048 op, 295785600.00 ns, 144.4266 us/op
+WorkloadPilot   23: 4096 op, 600784400.00 ns, 146.6759 us/op
+
+OverheadWarmup   1: 4096 op, 10200.00 ns, 2.4902 ns/op
+OverheadWarmup   2: 4096 op, 8100.00 ns, 1.9775 ns/op
+OverheadWarmup   3: 4096 op, 7800.00 ns, 1.9043 ns/op
+OverheadWarmup   4: 4096 op, 8700.00 ns, 2.1240 ns/op
+OverheadWarmup   5: 4096 op, 8300.00 ns, 2.0264 ns/op
+OverheadWarmup   6: 4096 op, 8200.00 ns, 2.0020 ns/op
+OverheadWarmup   7: 4096 op, 7800.00 ns, 1.9043 ns/op
+OverheadWarmup   8: 4096 op, 7900.00 ns, 1.9287 ns/op
+OverheadWarmup   9: 4096 op, 8000.00 ns, 1.9531 ns/op
+OverheadWarmup  10: 4096 op, 8100.00 ns, 1.9775 ns/op
+OverheadWarmup  11: 4096 op, 8100.00 ns, 1.9775 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 4096 op, 573181300.00 ns, 139.9368 us/op
+WorkloadActual   2: 4096 op, 480978400.00 ns, 117.4264 us/op
+WorkloadActual   3: 4096 op, 315970500.00 ns, 77.1412 us/op
+WorkloadActual   4: 4096 op, 233972400.00 ns, 57.1222 us/op
+WorkloadActual   5: 4096 op, 225933800.00 ns, 55.1596 us/op
+WorkloadActual   6: 4096 op, 225488200.00 ns, 55.0508 us/op
+WorkloadActual   7: 4096 op, 231328000.00 ns, 56.4766 us/op
+WorkloadActual   8: 4096 op, 228022800.00 ns, 55.6696 us/op
+WorkloadActual   9: 4096 op, 229223800.00 ns, 55.9628 us/op
+WorkloadActual  10: 4096 op, 228365400.00 ns, 55.7533 us/op
+WorkloadActual  11: 4096 op, 226756200.00 ns, 55.3604 us/op
+WorkloadActual  12: 4096 op, 224352200.00 ns, 54.7735 us/op
+WorkloadActual  13: 4096 op, 233391900.00 ns, 56.9804 us/op
+WorkloadActual  14: 4096 op, 234032300.00 ns, 57.1368 us/op
+WorkloadActual  15: 4096 op, 227646200.00 ns, 55.5777 us/op
+
+// AfterActualRun
+WorkloadResult   1: 4096 op, 233972400.00 ns, 57.1222 us/op
+WorkloadResult   2: 4096 op, 225933800.00 ns, 55.1596 us/op
+WorkloadResult   3: 4096 op, 225488200.00 ns, 55.0508 us/op
+WorkloadResult   4: 4096 op, 231328000.00 ns, 56.4766 us/op
+WorkloadResult   5: 4096 op, 228022800.00 ns, 55.6696 us/op
+WorkloadResult   6: 4096 op, 229223800.00 ns, 55.9628 us/op
+WorkloadResult   7: 4096 op, 228365400.00 ns, 55.7533 us/op
+WorkloadResult   8: 4096 op, 226756200.00 ns, 55.3604 us/op
+WorkloadResult   9: 4096 op, 224352200.00 ns, 54.7735 us/op
+WorkloadResult  10: 4096 op, 233391900.00 ns, 56.9804 us/op
+WorkloadResult  11: 4096 op, 234032300.00 ns, 57.1368 us/op
+WorkloadResult  12: 4096 op, 227646200.00 ns, 55.5777 us/op
+// GC:  5 1 0 48366544 4096
+// Threading:  0 0 4096
+
+// AfterAll
+// Benchmark Process 77676 has exited with code 0.
+
+Mean = 55.919 μs, StdErr = 0.239 μs (0.43%), N = 12, StdDev = 0.827 μs
+Min = 54.773 μs, Q1 = 55.310 μs, Median = 55.711 μs, Q3 = 56.603 μs, Max = 57.137 μs
+IQR = 1.292 μs, LowerFence = 53.372 μs, UpperFence = 58.541 μs
+ConfidenceInterval = [54.859 μs; 56.978 μs] (CI 99.9%), Margin = 1.060 μs (1.90% of Mean)
+Skewness = 0.31, Kurtosis = 1.49, MValue = 2
+
+// ** Remained 10 (40.0%) benchmark(s) to run. Estimated finish 2025-06-20 17:31 (0h 2m from now) **
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\ManajemenGudang.PerformanceTests.LoginViewModelBenchmarks-report.html
+
+// * Detailed results *
+LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=5]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 12.394 ns, StdErr = 0.081 ns (0.65%), N = 88, StdDev = 0.756 ns
+Min = 11.230 ns, Q1 = 11.792 ns, Median = 12.258 ns, Q3 = 12.927 ns, Max = 14.544 ns
+IQR = 1.135 ns, LowerFence = 10.090 ns, UpperFence = 14.630 ns
+ConfidenceInterval = [12.120 ns; 12.669 ns] (CI 99.9%), Margin = 0.274 ns (2.21% of Mean)
+Skewness = 0.6, Kurtosis = 2.6, MValue = 2.38
+-------------------- Histogram --------------------
+[11.206 ns ; 11.682 ns) | @@@@@@@@@@@@@@@@
+[11.682 ns ; 12.128 ns) | @@@@@@@@@@@@@@@@@@@@@@@@@@
+[12.128 ns ; 12.649 ns) | @@@@@@@@@@@@@@@@
+[12.649 ns ; 13.207 ns) | @@@@@@@@@@@@@@@@@@
+[13.207 ns ; 13.513 ns) | @@@
+[13.513 ns ; 13.959 ns) | @@@@@@
+[13.959 ns ; 14.277 ns) | @@
+[14.277 ns ; 14.767 ns) | @
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=5]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 59.276 μs, StdErr = 0.259 μs (0.44%), N = 14, StdDev = 0.968 μs
+Min = 58.327 μs, Q1 = 58.631 μs, Median = 58.968 μs, Q3 = 59.776 μs, Max = 61.444 μs
+IQR = 1.145 μs, LowerFence = 56.914 μs, UpperFence = 61.493 μs
+ConfidenceInterval = [58.184 μs; 60.369 μs] (CI 99.9%), Margin = 1.092 μs (1.84% of Mean)
+Skewness = 0.94, Kurtosis = 2.52, MValue = 2
+-------------------- Histogram --------------------
+[58.155 μs ; 59.784 μs) | @@@@@@@@@@
+[59.784 μs ; 61.972 μs) | @@@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=5]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 57.215 μs, StdErr = 0.254 μs (0.44%), N = 12, StdDev = 0.879 μs
+Min = 55.766 μs, Q1 = 56.749 μs, Median = 57.083 μs, Q3 = 57.576 μs, Max = 58.996 μs
+IQR = 0.827 μs, LowerFence = 55.508 μs, UpperFence = 58.816 μs
+ConfidenceInterval = [56.089 μs; 58.341 μs] (CI 99.9%), Margin = 1.126 μs (1.97% of Mean)
+Skewness = 0.4, Kurtosis = 2.4, MValue = 2
+-------------------- Histogram --------------------
+[55.464 μs ; 57.640 μs) | @@@@@@@@@
+[57.640 μs ; 59.500 μs) | @@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 11.406 ns, StdErr = 0.073 ns (0.64%), N = 51, StdDev = 0.520 ns
+Min = 10.771 ns, Q1 = 11.016 ns, Median = 11.235 ns, Q3 = 11.698 ns, Max = 12.751 ns
+IQR = 0.682 ns, LowerFence = 9.992 ns, UpperFence = 12.722 ns
+ConfidenceInterval = [11.151 ns; 11.660 ns] (CI 99.9%), Margin = 0.255 ns (2.23% of Mean)
+Skewness = 0.88, Kurtosis = 2.7, MValue = 2
+-------------------- Histogram --------------------
+[10.586 ns ; 10.861 ns) | @@@
+[10.861 ns ; 11.229 ns) | @@@@@@@@@@@@@@@@@@@@@@
+[11.229 ns ; 11.603 ns) | @@@@@@@@@@@
+[11.603 ns ; 12.098 ns) | @@@@@@@@@
+[12.098 ns ; 12.622 ns) | @@@@@
+[12.622 ns ; 12.935 ns) | @
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 57.847 μs, StdErr = 0.164 μs (0.28%), N = 12, StdDev = 0.568 μs
+Min = 56.839 μs, Q1 = 57.569 μs, Median = 57.970 μs, Q3 = 58.133 μs, Max = 58.910 μs
+IQR = 0.564 μs, LowerFence = 56.723 μs, UpperFence = 58.978 μs
+ConfidenceInterval = [57.119 μs; 58.576 μs] (CI 99.9%), Margin = 0.728 μs (1.26% of Mean)
+Skewness = -0.24, Kurtosis = 2.45, MValue = 2
+-------------------- Histogram --------------------
+[56.513 μs ; 59.236 μs) | @@@@@@@@@@@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=10]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 56.528 μs, StdErr = 0.290 μs (0.51%), N = 21, StdDev = 1.329 μs
+Min = 54.710 μs, Q1 = 55.487 μs, Median = 56.394 μs, Q3 = 57.074 μs, Max = 59.547 μs
+IQR = 1.587 μs, LowerFence = 53.106 μs, UpperFence = 59.455 μs
+ConfidenceInterval = [55.411 μs; 57.645 μs] (CI 99.9%), Margin = 1.117 μs (1.98% of Mean)
+Skewness = 0.69, Kurtosis = 2.57, MValue = 2
+-------------------- Histogram --------------------
+[54.078 μs ; 55.203 μs) | @@
+[55.203 μs ; 56.467 μs) | @@@@@@@@@
+[56.467 μs ; 58.462 μs) | @@@@@@@
+[58.462 μs ; 59.727 μs) | @@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Admin Login': DefaultJob [UserCount=15]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 11.355 ns, StdErr = 0.068 ns (0.60%), N = 30, StdDev = 0.374 ns
+Min = 10.972 ns, Q1 = 11.064 ns, Median = 11.231 ns, Q3 = 11.431 ns, Max = 12.217 ns
+IQR = 0.368 ns, LowerFence = 10.512 ns, UpperFence = 11.983 ns
+ConfidenceInterval = [11.105 ns; 11.605 ns] (CI 99.9%), Margin = 0.250 ns (2.20% of Mean)
+Skewness = 1.06, Kurtosis = 2.75, MValue = 2
+-------------------- Histogram --------------------
+[10.968 ns ; 11.284 ns) | @@@@@@@@@@@@@@@@@@@@
+[11.284 ns ; 11.634 ns) | @@@
+[11.634 ns ; 11.943 ns) | @@@
+[11.943 ns ; 12.259 ns) | @@@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Valid User Login': DefaultJob [UserCount=15]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 57.948 μs, StdErr = 0.249 μs (0.43%), N = 13, StdDev = 0.899 μs
+Min = 56.841 μs, Q1 = 57.262 μs, Median = 57.941 μs, Q3 = 58.343 μs, Max = 60.370 μs
+IQR = 1.081 μs, LowerFence = 55.641 μs, UpperFence = 59.964 μs
+ConfidenceInterval = [56.871 μs; 59.025 μs] (CI 99.9%), Margin = 1.077 μs (1.86% of Mean)
+Skewness = 1.24, Kurtosis = 4.35, MValue = 2
+-------------------- Histogram --------------------
+[56.339 μs ; 57.500 μs) | @@@@@
+[57.500 μs ; 60.872 μs) | @@@@@@@@
+---------------------------------------------------
+
+LoginViewModelBenchmarks.'Non-Existent User Login': DefaultJob [UserCount=15]
+Runtime = .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 55.919 μs, StdErr = 0.239 μs (0.43%), N = 12, StdDev = 0.827 μs
+Min = 54.773 μs, Q1 = 55.310 μs, Median = 55.711 μs, Q3 = 56.603 μs, Max = 57.137 μs
+IQR = 1.292 μs, LowerFence = 53.372 μs, UpperFence = 58.541 μs
+ConfidenceInterval = [54.859 μs; 56.978 μs] (CI 99.9%), Margin = 1.060 μs (1.90% of Mean)
+Skewness = 0.31, Kurtosis = 1.49, MValue = 2
+-------------------- Histogram --------------------
+[54.299 μs ; 56.062 μs) | @@@@@@@@
+[56.062 μs ; 57.375 μs) | @@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.15.2, Windows 11 (10.0.22631.5472/23H2/2023Update/SunValley3)
+AMD Ryzen 5 5600H with Radeon Graphics 3.30GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 9.0.200
+  [Host]     : .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+
+
+| Method                    | UserCount | Mean         | Error        | StdDev       | Gen0   | Gen1   | Allocated |
+|-------------------------- |---------- |-------------:|-------------:|-------------:|-------:|-------:|----------:|
+| 'Admin Login'             | 5         |     12.39 ns |     0.274 ns |     0.756 ns | 0.0038 |      - |      32 B |
+| 'Valid User Login'        | 5         | 59,276.49 ns | 1,092.297 ns |   968.293 ns | 1.2207 | 0.2441 |   12056 B |
+| 'Non-Existent User Login' | 5         | 57,215.01 ns | 1,126.210 ns |   879.270 ns | 1.2207 | 0.2441 |   11808 B |
+| 'Admin Login'             | 10        |     11.41 ns |     0.255 ns |     0.520 ns | 0.0038 |      - |      32 B |
+| 'Valid User Login'        | 10        | 57,847.40 ns |   728.113 ns |   568.463 ns | 1.2207 | 0.2441 |   12056 B |
+| 'Non-Existent User Login' | 10        | 56,527.91 ns | 1,116.612 ns | 1,329.247 ns | 1.2207 | 0.2441 |   11808 B |
+| 'Admin Login'             | 15        |     11.36 ns |     0.250 ns |     0.374 ns | 0.0038 |      - |      32 B |
+| 'Valid User Login'        | 15        | 57,948.18 ns | 1,076.825 ns |   899.198 ns | 1.2207 | 0.2441 |   12056 B |
+| 'Non-Existent User Login' | 15        | 55,918.64 ns | 1,059.797 ns |   827.419 ns | 1.2207 | 0.2441 |   11808 B |
+
+// * Hints *
+Outliers
+  LoginViewModelBenchmarks.'Admin Login': Default             -> 3 outliers were removed (16.31 ns..20.56 ns)
+  LoginViewModelBenchmarks.'Valid User Login': Default        -> 3 outliers were removed (73.50 μs..148.17 μs)
+  LoginViewModelBenchmarks.'Non-Existent User Login': Default -> 3 outliers were removed (66.40 μs..143.74 μs)
+  LoginViewModelBenchmarks.'Admin Login': Default             -> 1 outlier  was  removed (15.03 ns)
+  LoginViewModelBenchmarks.'Valid User Login': Default        -> 3 outliers were removed (73.85 μs..148.33 μs)
+  LoginViewModelBenchmarks.'Non-Existent User Login': Default -> 3 outliers were removed (71.62 μs..140.69 μs)
+  LoginViewModelBenchmarks.'Admin Login': Default             -> 1 outlier  was  removed (14.07 ns)
+  LoginViewModelBenchmarks.'Valid User Login': Default        -> 3 outliers were removed (95.78 μs..149.19 μs)
+  LoginViewModelBenchmarks.'Non-Existent User Login': Default -> 3 outliers were removed (77.14 μs..139.94 μs)
+
+// * Legends *
+  UserCount : Value of the 'UserCount' parameter
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen0      : GC Generation 0 collects per 1000 operations
+  Gen1      : GC Generation 1 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ns      : 1 Nanosecond (0.000000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:02:57 (177.51 sec), executed benchmarks: 9
+
+// Found 3 benchmarks:
+//   RegisterViewModelBenchmarks.RegisterNewUser: DefaultJob [ExistingUserCount=5]
+//   RegisterViewModelBenchmarks.RegisterNewUser: DefaultJob [ExistingUserCount=10]
+//   RegisterViewModelBenchmarks.RegisterNewUser: DefaultJob [ExistingUserCount=15]
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: RegisterViewModelBenchmarks.RegisterNewUser: DefaultJob [ExistingUserCount=5]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet ManajemenGudang.PerformanceTests-1.dll --anonymousPipes 1524 1768 --benchmarkName "ManajemenGudang.PerformanceTests.RegisterViewModelBenchmarks.RegisterNewUser(ExistingUserCount: 5)" --job Default --benchmarkId 15 in C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\bin\Release\net8.0-windows\ManajemenGudang.PerformanceTests-1\bin\Release\net8.0-Windows7.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.15.2
+// Runtime=.NET 8.0.13 (8.0.1325.6609), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 100900.00 ns, 100.9000 us/op
+WorkloadJitting  1: 1 op, 154283800.00 ns, 154.2838 ms/op
+
+WorkloadPilot    1: 2 op, 4090900.00 ns, 2.0455 ms/op
+WorkloadPilot    2: 3 op, 2852600.00 ns, 950.8667 us/op
+WorkloadPilot    3: 4 op, 3822000.00 ns, 955.5000 us/op
+WorkloadPilot    4: 5 op, 4258400.00 ns, 851.6800 us/op
+WorkloadPilot    5: 6 op, 5442200.00 ns, 907.0333 us/op
+WorkloadPilot    6: 7 op, 7607400.00 ns, 1.0868 ms/op
+WorkloadPilot    7: 8 op, 7641000.00 ns, 955.1250 us/op
+WorkloadPilot    8: 9 op, 8946700.00 ns, 994.0778 us/op
+WorkloadPilot    9: 10 op, 10400400.00 ns, 1.0400 ms/op
+WorkloadPilot   10: 11 op, 11946300.00 ns, 1.0860 ms/op
+WorkloadPilot   11: 12 op, 12958000.00 ns, 1.0798 ms/op
+WorkloadPilot   12: 13 op, 23059900.00 ns, 1.7738 ms/op
+WorkloadPilot   13: 14 op, 21946000.00 ns, 1.5676 ms/op
+WorkloadPilot   14: 15 op, 24690000.00 ns, 1.6460 ms/op
+WorkloadPilot   15: 16 op, 27603700.00 ns, 1.7252 ms/op
+WorkloadPilot   16: 32 op, 62300400.00 ns, 1.9469 ms/op
+WorkloadPilot   17: 64 op, 136957100.00 ns, 2.1400 ms/op
+WorkloadPilot   18: 128 op, 356420000.00 ns, 2.7845 ms/op
+WorkloadPilot   19: 256 op, 486548300.00 ns, 1.9006 ms/op
+WorkloadPilot   20: 512 op, 1012616300.00 ns, 1.9778 ms/op
+
+OverheadWarmup   1: 512 op, 3000.00 ns, 5.8594 ns/op
+OverheadWarmup   2: 512 op, 1500.00 ns, 2.9297 ns/op
+OverheadWarmup   3: 512 op, 1400.00 ns, 2.7344 ns/op
+OverheadWarmup   4: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadWarmup   5: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadWarmup   6: 512 op, 1300.00 ns, 2.5391 ns/op
+OverheadWarmup   7: 512 op, 1800.00 ns, 3.5156 ns/op
+OverheadWarmup   8: 512 op, 1400.00 ns, 2.7344 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 512 op, 700400200.00 ns, 1.3680 ms/op
+WorkloadActual   2: 512 op, 745703500.00 ns, 1.4565 ms/op
+WorkloadActual   3: 512 op, 859667200.00 ns, 1.6790 ms/op
+WorkloadActual   4: 512 op, 974907500.00 ns, 1.9041 ms/op
+WorkloadActual   5: 512 op, 1097155500.00 ns, 2.1429 ms/op
+WorkloadActual   6: 512 op, 1230510000.00 ns, 2.4033 ms/op
+WorkloadActual   7: 512 op, 1387226500.00 ns, 2.7094 ms/op
+WorkloadActual   8: 512 op, 1452221500.00 ns, 2.8364 ms/op
+WorkloadActual   9: 512 op, 1645726700.00 ns, 3.2143 ms/op
+WorkloadActual  10: 512 op, 1689923300.00 ns, 3.3006 ms/op
+WorkloadActual  11: 512 op, 1812686500.00 ns, 3.5404 ms/op
+WorkloadActual  12: 512 op, 1924897400.00 ns, 3.7596 ms/op
+WorkloadActual  13: 512 op, 2100730400.00 ns, 4.1030 ms/op
+WorkloadActual  14: 512 op, 2157514100.00 ns, 4.2139 ms/op
+WorkloadActual  15: 512 op, 2281348500.00 ns, 4.4558 ms/op
+WorkloadActual  16: 512 op, 2392973200.00 ns, 4.6738 ms/op
+WorkloadActual  17: 512 op, 2652189700.00 ns, 5.1801 ms/op
+WorkloadActual  18: 512 op, 2647495200.00 ns, 5.1709 ms/op
+WorkloadActual  19: 512 op, 2749601400.00 ns, 5.3703 ms/op
+WorkloadActual  20: 512 op, 2899354600.00 ns, 5.6628 ms/op
+WorkloadActual  21: 512 op, 3070847700.00 ns, 5.9977 ms/op
+WorkloadActual  22: 512 op, 3182856000.00 ns, 6.2165 ms/op
+WorkloadActual  23: 512 op, 3333233800.00 ns, 6.5102 ms/op
+WorkloadActual  24: 512 op, 3393965600.00 ns, 6.6288 ms/op
+WorkloadActual  25: 512 op, 3532709200.00 ns, 6.8998 ms/op
+WorkloadActual  26: 512 op, 3725651000.00 ns, 7.2767 ms/op
+WorkloadActual  27: 512 op, 3754857100.00 ns, 7.3337 ms/op
+WorkloadActual  28: 512 op, 3893693100.00 ns, 7.6049 ms/op
+WorkloadActual  29: 512 op, 4079454600.00 ns, 7.9677 ms/op
+WorkloadActual  30: 512 op, 4173554600.00 ns, 8.1515 ms/op
+WorkloadActual  31: 512 op, 4225734400.00 ns, 8.2534 ms/op
+WorkloadActual  32: 512 op, 4406993200.00 ns, 8.6074 ms/op
+WorkloadActual  33: 512 op, 4493958000.00 ns, 8.7773 ms/op
+WorkloadActual  34: 512 op, 4667154400.00 ns, 9.1155 ms/op
+WorkloadActual  35: 512 op, 4818861900.00 ns, 9.4118 ms/op
+WorkloadActual  36: 512 op, 4938060700.00 ns, 9.6446 ms/op
+WorkloadActual  37: 512 op, 4970136500.00 ns, 9.7073 ms/op
+WorkloadActual  38: 512 op, 5160601300.00 ns, 10.0793 ms/op
+WorkloadActual  39: 512 op, 5278306600.00 ns, 10.3092 ms/op
+WorkloadActual  40: 512 op, 5409858900.00 ns, 10.5661 ms/op
+WorkloadActual  41: 512 op, 5535514900.00 ns, 10.8116 ms/op
+WorkloadActual  42: 512 op, 5608310000.00 ns, 10.9537 ms/op
+WorkloadActual  43: 512 op, 5879167000.00 ns, 11.4827 ms/op
+WorkloadActual  44: 512 op, 5837893500.00 ns, 11.4021 ms/op
+WorkloadActual  45: 512 op, 5996189100.00 ns, 11.7113 ms/op
+WorkloadActual  46: 512 op, 6370278900.00 ns, 12.4420 ms/op
+WorkloadActual  47: 512 op, 6323848300.00 ns, 12.3513 ms/op
+WorkloadActual  48: 512 op, 6381302000.00 ns, 12.4635 ms/op
+WorkloadActual  49: 512 op, 6515085100.00 ns, 12.7248 ms/op
+WorkloadActual  50: 512 op, 6669457200.00 ns, 13.0263 ms/op
+WorkloadActual  51: 512 op, 6909925400.00 ns, 13.4959 ms/op
+WorkloadActual  52: 512 op, 6885213700.00 ns, 13.4477 ms/op
+WorkloadActual  53: 512 op, 7044847200.00 ns, 13.7595 ms/op
+WorkloadActual  54: 512 op, 7171218100.00 ns, 14.0063 ms/op
+WorkloadActual  55: 512 op, 7365356000.00 ns, 14.3855 ms/op
+WorkloadActual  56: 512 op, 7812705700.00 ns, 15.2592 ms/op
+WorkloadActual  57: 512 op, 8269071900.00 ns, 16.1505 ms/op
+WorkloadActual  58: 512 op, 8314331200.00 ns, 16.2389 ms/op
+WorkloadActual  59: 512 op, 8376898700.00 ns, 16.3611 ms/op
+WorkloadActual  60: 512 op, 8777950300.00 ns, 17.1444 ms/op
+WorkloadActual  61: 512 op, 8827262600.00 ns, 17.2407 ms/op
+WorkloadActual  62: 512 op, 8980232200.00 ns, 17.5395 ms/op
+WorkloadActual  63: 512 op, 9689134700.00 ns, 18.9241 ms/op
+WorkloadActual  64: 512 op, 28978807100.00 ns, 56.5992 ms/op
+WorkloadActual  65: 512 op, 22633621300.00 ns, 44.2063 ms/op
+WorkloadActual  66: 512 op, 9679961400.00 ns, 18.9062 ms/op
+WorkloadActual  67: 512 op, 9594025200.00 ns, 18.7383 ms/op
+WorkloadActual  68: 512 op, 9741470300.00 ns, 19.0263 ms/op
+WorkloadActual  69: 512 op, 9870076600.00 ns, 19.2775 ms/op
+WorkloadActual  70: 512 op, 10003870700.00 ns, 19.5388 ms/op
+WorkloadActual  71: 512 op, 10267111000.00 ns, 20.0530 ms/op
+WorkloadActual  72: 512 op, 10357019000.00 ns, 20.2286 ms/op
+WorkloadActual  73: 512 op, 10541682400.00 ns, 20.5892 ms/op
+WorkloadActual  74: 512 op, 10731148200.00 ns, 20.9593 ms/op
+WorkloadActual  75: 512 op, 10713245000.00 ns, 20.9243 ms/op
+WorkloadActual  76: 512 op, 10823123400.00 ns, 21.1389 ms/op
+WorkloadActual  77: 512 op, 10979457100.00 ns, 21.4443 ms/op
+WorkloadActual  78: 512 op, 11275529200.00 ns, 22.0225 ms/op
+WorkloadActual  79: 512 op, 11277875500.00 ns, 22.0271 ms/op
+WorkloadActual  80: 512 op, 11400582900.00 ns, 22.2668 ms/op
+WorkloadActual  81: 512 op, 11524148400.00 ns, 22.5081 ms/op
+WorkloadActual  82: 512 op, 11621348200.00 ns, 22.6979 ms/op
+WorkloadActual  83: 512 op, 11897039700.00 ns, 23.2364 ms/op
+Successfully reverted power plan (GUID: 381b4222-f694-41f0-9685-ff5bb260df2e FriendlyName: Balanced)

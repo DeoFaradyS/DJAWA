@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenGudang", "Manajeme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenGudang.Tests", "..\ManajemenGudang.Tests\ManajemenGudang.Tests.csproj", "{A903F946-3D59-4BDB-B039-323880D8A2D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenGudang.PerformanceTests", "..\ManajemenGudang.PerformanceTests\ManajemenGudang.PerformanceTests.csproj", "{D5728372-A8DE-49E1-9D47-F3069CC013E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A903F946-3D59-4BDB-B039-323880D8A2D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A903F946-3D59-4BDB-B039-323880D8A2D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A903F946-3D59-4BDB-B039-323880D8A2D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5728372-A8DE-49E1-9D47-F3069CC013E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5728372-A8DE-49E1-9D47-F3069CC013E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5728372-A8DE-49E1-9D47-F3069CC013E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5728372-A8DE-49E1-9D47-F3069CC013E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

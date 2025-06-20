@@ -1,0 +1,6 @@
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.csproj.AssemblyReference.cache
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.AssemblyInfoInputs.cache
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.AssemblyInfo.cs
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.csproj.CoreCompileInputs.cache
+C:\Semester 6\Konstruksi Perangkat Lunak\Pakai ini\DJAWA\ManajemenGudang.PerformanceTests\obj\Release\net8.0\ManajemenGudang.PerformanceTests.sourcelink.json

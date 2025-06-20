@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ManajemenGudang.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df8ecd922ba7dc5dfd99ed732e79137767baf53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47df52be814b572f8fd17a95552467c1ddeaef6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ManajemenGudang.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ManajemenGudang.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
